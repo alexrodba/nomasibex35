@@ -62,7 +62,7 @@ class HomeIndex extends React.Component {
                         <article style={{backgroundImage: `url(${pic06})`}}>
                             <header className="major">
                                 <h3>Servicios</h3>
-                                <p>TODO</p>
+                                <p>Sirviendo, por un mundo mejor</p>
                             </header>
                             <Link to="/" className="link primary"></Link>
                         </article>
@@ -95,7 +95,7 @@ class HomeIndex extends React.Component {
                             </header>
                             <p>No Más IBEX 35 es un sitio web sin ánimo de lucro que proporciona información pública a quien quiera encontrar otras opciones a las empresas listadas en el IBEX 35. Algunos de los enlaces a las empresas alternativas son de afiliación y reportan unos ingresos económicos a No Más IBEX 35. Usaremos estos ingresos para cubrir los gastos básicos de este sitio web y el resto lo donaremos a beneficiencia.</p>
                             <ul className="actions">
-                                <li><Link to="/landing" className="button next">Ver todas las empresas</Link></li>
+                                <li><Link to="/" className="button next">Ver todas las empresas</Link></li>
                             </ul>
                         </div>
                     </section>
