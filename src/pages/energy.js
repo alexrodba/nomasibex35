@@ -1,0 +1,94 @@
+import React from 'react'
+import { Link } from 'gatsby'
+import Helmet from 'react-helmet'
+import Layout from '../components/layout'
+import BannerLanding from '../components/BannerEnergy'
+
+import pic08 from '../assets/images/hola.jpg'
+import pic09 from '../assets/images/som.jpg'
+import pic10 from '../assets/images/sole.jpg'
+
+const Landing = (props) => (
+    <Layout>
+        <Helmet>
+            <title>Landing - Forty by HTML5 UP</title>
+            <meta name="description" content="Landing Page" />
+        </Helmet>
+
+        <BannerLanding />
+
+        <div id="main">
+            <section id="one">
+                <div className="inner">
+                    <header className="major">
+                        <h2>El poder, para el pueblo</h2>
+                    </header>
+                    <p>Las empresas energéticas listadas en el IBEX 35 son las siguientes:</p>
+                    <ul>
+                        <li>ENAGAS</li>
+                        <li>Endesa</li>
+                        <li>Iberdrola</li>
+                        <li>Naturgy (ex-Gas Natural)</li>
+                        <li>Red Eléctrica de España</li>
+                        <li>Repsol</li>
+                        <li>Siemens Gamesa</li>
+                    </ul>
+                    <p>Las empresas alternativas que proponemos son las siguientes:</p>
+                </div>
+            </section>
+            <section id="two" className="spotlights">
+                <section>
+                    <Link to="/generic" className="image">
+                        <img src={pic08} alt="" />
+                    </Link>
+                    <div className="content">
+                        <div className="inner">
+                            <header className="major">
+                                <h3>HolaLuz</h3>
+                            </header>
+                            <p>HolaLuz vende solamente energía 100% de origen renovable. Gracias al uso de la tecnología, HolaLuz ofrece productos personalizados y tarifas que te permiten ahorrar. Además, su cultura de trato de clientes es excepcional y te hacen sentir importante.</p>
+                            <ul className="actions">
+                                <li><a href="https://sharer.holaluz.com/es/alta/DIAT-VK1SJU" target="_blank" className="button">Date de alta</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <Link to="/generic" className="image">
+                        <img src={pic09} alt="" />
+                    </Link>
+                    <div className="content">
+                        <div className="inner">
+                            <header className="major">
+                                <h3>Som Energia</h3>
+                            </header>
+                            <p>Som Energia es una cooperativa de consumo de energía verde sin ánimo de lucro. Sus actividades principales son la comercialización y la producción de energía de origen renovable. Comprometidos a impulsar un cambio de modelo energético actual para alcanzar un modelo 100% renovable.</p>
+                            <ul className="actions">
+                                <li><Link to="/generic" className="button">Date de alta</Link></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <Link to="/generic" className="image">
+                        <img src={pic10} alt="" />
+                    </Link>
+                    <div className="content">
+                        <div className="inner">
+                            <header className="major">
+                                <h3>EnergÉtica</h3>
+                            </header>
+                            <p>EnergÉtica es una cooperativa de consumidores sin ánimo de lucro de energía 100% renovable. Comercializan electricidad de mínimo impacto ambiental a la par que te forman en eficiencia energética y autoconsumo.</p>
+                            <ul className="actions">
+                                <li><Link to="/generic" className="button">Date de alta</Link></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+
+    </Layout>
+)
+
+export default Landing

@@ -4,12 +4,14 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
 
-import pic01 from '../assets/images/pic01.jpg'
-import pic02 from '../assets/images/pic02.jpg'
-import pic03 from '../assets/images/pic03.jpg'
-import pic04 from '../assets/images/pic04.jpg'
-import pic05 from '../assets/images/pic05.jpg'
-import pic06 from '../assets/images/pic06.jpg'
+import pic01 from '../assets/images/energy.jpg'
+import pic02 from '../assets/images/bank.jpg'
+import pic03 from '../assets/images/phone.jpg'
+import pic04 from '../assets/images/travel.jpg'
+import pic05 from '../assets/images/realestate.jpg'
+import pic06 from '../assets/images/services.jpg'
+import pic07 from '../assets/images/shopping.jpg'
+import pic08 from '../assets/images/boxes.jpg'
 
 class HomeIndex extends React.Component {
     render() {
@@ -31,43 +33,57 @@ class HomeIndex extends React.Component {
                     <section id="one" className="tiles">
                         <article style={{backgroundImage: `url(${pic01})`}}>
                             <header className="major">
-                                <h3>Aliquam</h3>
-                                <p>Ipsum dolor sit amet</p>
+                                <h3>Energéticas</h3>
+                                <p>Poder para el pueblo</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/energeticas" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic02})`}}>
                             <header className="major">
-                                <h3>Tempus</h3>
-                                <p>feugiat amet tempus</p>
+                                <h3>Banca</h3>
+                                <p>Dinero ético es dinero limpio</p>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic03})`}}>
                             <header className="major">
-                                <h3>Magna</h3>
-                                <p>Lorem etiam nullam</p>
-                            </header>
-                            <Link to="/landing" className="link primary"></Link>
-                        </article>
-                        <article style={{backgroundImage: `url(${pic04})`}}>
-                            <header className="major">
-                                <h3>Ipsum</h3>
-                                <p>Nisl sed aliquam</p>
+                                <h3>Telefónicas</h3>
+                                <p>Somos tu voz</p>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic05})`}}>
                             <header className="major">
-                                <h3>Consequat</h3>
-                                <p>Ipsum dolor sit amet</p>
+                                <h3>Immobiliarias</h3>
+                                <p>Casas para la gente</p>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic06})`}}>
                             <header className="major">
-                                <h3>Etiam</h3>
-                                <p>Feugiat amet tempus</p>
+                                <h3>Servicios</h3>
+                                <p>TODO</p>
+                            </header>
+                            <Link to="/landing" className="link primary"></Link>
+                        </article>
+                        <article style={{backgroundImage: `url(${pic07})`}}>
+                            <header className="major">
+                                <h3>Consumo</h3>
+                                <p>Mirad la etiqueta antes de comprar</p>
+                            </header>
+                            <Link to="/landing" className="link primary"></Link>
+                        </article>
+                        <article style={{backgroundImage: `url(${pic04})`}}>
+                            <header className="major">
+                                <h3>Turismo</h3>
+                                <p>Por un mundo más sostenible</p>
+                            </header>
+                            <Link to="/landing" className="link primary"></Link>
+                        </article>
+                        <article style={{backgroundImage: `url(${pic08})`}}>
+                            <header className="major">
+                                <h3>Otros</h3>
+                                <p>Difíciles de clasificar</p>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
@@ -75,11 +91,11 @@ class HomeIndex extends React.Component {
                     <section id="two">
                         <div className="inner">
                             <header className="major">
-                                <h2>Massa libero</h2>
+                                <h2>Todas las empresas</h2>
                             </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+                            <p>No Más IBEX 35 es un sitio web sin ánimo de lucro que proporciona información pública a quien quiera encontrar otras opciones a las empresas listadas en el IBEX 35. Algunos de los enlaces a las empresas alternativas son de afiliación y reportan unos ingresos económicos a No Más IBEX 35. Usaremos estos ingresos para cubrir los gastos básicos de este sitio web y el resto lo donaremos a beneficiencia.</p>
                             <ul className="actions">
-                                <li><Link to="/landing" className="button next">Get Started</Link></li>
+                                <li><Link to="/landing" className="button next">Ver todas las empresas</Link></li>
                             </ul>
                         </div>
                     </section>
