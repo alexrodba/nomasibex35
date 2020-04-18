@@ -19,10 +19,10 @@ class HomeIndex extends React.Component {
         return (
             <Layout>
                 <Helmet
-                    title="Gatsby Starter - Forty"
+                    title="No Más IBEX 35"
                     meta={[
-                        { name: 'description', content: 'Sample' },
-                        { name: 'keywords', content: 'sample, something' },
+                        { name: 'description', content: 'No Más IBEX 35 es un sitio web sin ánimo de lucro que proporciona información pública a quien quiera encontrar otras opciones a las empresas listadas en el IBEX 35' },
+                        { name: 'keywords', content: 'ibex, ibex35, energia, telefonia, energeticas, telefónicas, banca ética, holaluz, autoconsumo, energías renovables, ética empresarial' },
                     ]}
                 >
                 </Helmet>
@@ -43,49 +43,49 @@ class HomeIndex extends React.Component {
                                 <h3>Banca</h3>
                                 <p>Dinero ético es dinero limpio</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic03})`}}>
                             <header className="major">
                                 <h3>Telefónicas</h3>
                                 <p>Somos tu voz</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic05})`}}>
                             <header className="major">
                                 <h3>Immobiliarias</h3>
                                 <p>Casas para la gente</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic06})`}}>
                             <header className="major">
                                 <h3>Servicios</h3>
                                 <p>TODO</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic07})`}}>
                             <header className="major">
                                 <h3>Consumo</h3>
                                 <p>Mirad la etiqueta antes de comprar</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic04})`}}>
                             <header className="major">
                                 <h3>Turismo</h3>
                                 <p>Por un mundo más sostenible</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic08})`}}>
                             <header className="major">
                                 <h3>Otros</h3>
                                 <p>Difíciles de clasificar</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/" className="link primary"></Link>
                         </article>
                     </section>
                     <section id="two">
