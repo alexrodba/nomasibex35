@@ -48,7 +48,7 @@ const Landing = (props) => (
                             </header>
                             <p>HolaLuz vende solamente energía 100% de origen renovable. Gracias al uso de la tecnología, HolaLuz ofrece productos personalizados y tarifas que te permiten ahorrar. Además, su cultura de trato de clientes es excepcional y te hacen sentir importante.</p>
                             <ul className="actions">
-                                <li><a href="https://sharer.holaluz.com/es/alta/DIAT-VK1SJU" target="_blank" className="button">Date de alta</a></li>
+                                <li><a href="https://alta.holaluz.com/es/" target="_blank" className="button">Date de alta</a></li>
                             </ul>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ const Landing = (props) => (
                             </header>
                             <p>Som Energia es una cooperativa de consumo de energía verde sin ánimo de lucro. Sus actividades principales son la comercialización y la producción de energía de origen renovable. Comprometidos a impulsar un cambio de modelo energético actual para alcanzar un modelo 100% renovable.</p>
                             <ul className="actions">
-                                <li><Link to="/generic" className="button">Date de alta</Link></li>
+                                <li><a href="https://www.somenergia.coop/es/hazte-socio-a/" target="_blank" className="button">Date de alta</a></li>
                             </ul>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ const Landing = (props) => (
                             </header>
                             <p>EnergÉtica es una cooperativa de consumidores sin ánimo de lucro de energía 100% renovable. Comercializan electricidad de mínimo impacto ambiental a la par que te forman en eficiencia energética y autoconsumo.</p>
                             <ul className="actions">
-                                <li><Link to="/generic" className="button">Date de alta</Link></li>
+                                <li><a href="https://www.energetica.coop/hazte-cooperativista/" target="_blank" className="button">Date de alta</a></li>
                             </ul>
                         </div>
                     </div>
