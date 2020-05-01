@@ -4,14 +4,14 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import BannerLanding from '../components/BannerEnergy'
 
-import pic08 from '../assets/images/hola.jpg'
-import pic09 from '../assets/images/som.jpg'
-import pic10 from '../assets/images/sole.jpg'
+import pic01 from '../assets/images/banking/1.jpg'
+import pic02 from '../assets/images/banking/2.jpg'
+import pic03 from '../assets/images/banking/3.jpg'
 
 const Landing = (props) => (
     <Layout>
         <Helmet>
-            <title>Alternativas al IBEX 35 en el sector energético</title>
+            <title>Landing - Forty by HTML5 UP</title>
             <meta name="description" content="Landing Page" />
         </Helmet>
 
@@ -21,57 +21,56 @@ const Landing = (props) => (
             <section id="one">
                 <div className="inner">
                     <header className="major">
-                        <h2>El poder, para el pueblo</h2>
+                        <h2>Dinero ético es dinero límpio</h2>
                     </header>
-                    <p>Las empresas energéticas listadas en el IBEX 35 son las siguientes:</p>
+                    <p>Las empresas de banca listadas en el IBEX 35 son las siguientes:</p>
                     <ul>
-                        <li>ENAGAS</li>
-                        <li>Endesa</li>
-                        <li>Iberdrola</li>
-                        <li>Naturgy (ex-Gas Natural)</li>
-                        <li>Red Eléctrica de España</li>
-                        <li>Repsol</li>
-                        <li>Siemens Gamesa</li>
+                        <li>Banco Sabadell</li>
+                        <li>Banco Santander</li>
+                        <li>Bankia</li>
+                        <li>Bankinter</li>
+                        <li>BBVA</li>
+                        <li>CaixaBank</li>
                     </ul>
                     <p>Las empresas alternativas que proponemos son las siguientes:</p>
                 </div>
             </section>
             <section id="two" className="spotlights">
                 <section>
-                    <Link to="/generic" className="image">
-                        <img src={pic08} alt="" />
+                    <Link to="https://www.fiarebancaetica.coop/cuenta-etica" className="image">
+                        <img src={pic01} alt="Photo by Micheile Henderson on Unsplash" />
                     </Link>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
-                                <h3>HolaLuz</h3>
+                                <h3>Fiare Banca Etica</h3>
                             </header>
-                            <p>HolaLuz vende solamente energía 100% de origen renovable. Gracias al uso de la tecnología, HolaLuz ofrece productos personalizados y tarifas que te permiten ahorrar. Además, su cultura de trato de clientes es excepcional y te hacen sentir importante.</p>
+                            <p>Fiare Banca Etica nace de la unión de dos proyectos basados en las finanzas éticas: Banca Popolare Etica, un banco cooperativo que trabaja en Italia desde el 1999 y Fiare que opera en España desde el 2005. Ambos quieren ser una herramienta al servicio de la transformación social a través de la financiación de proyectos del tercer sector, la economía social y solidaria y la promoción de una cultura de la intermediación financiera, bajo los principios de la transparencia, la participación y la democracia.</p>
                             <ul className="actions">
-                                <li><a href="https://alta.holaluz.com/es/" target="_blank" className="button">Date de alta</a></li>
+                                <li><a href="https://www.fiarebancaetica.coop/cuenta-etica" target="_blank" className="button">Date de alta</a></li>
                             </ul>
                         </div>
                     </div>
                 </section>
                 <section>
                     <Link to="/generic" className="image">
-                        <img src={pic09} alt="" />
+                        <img src={pic02} alt="Photo by ThisisEngineering RAEng on Unsplash" />
                     </Link>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
-                                <h3>Som Energia</h3>
+                                <h3>Caixa d'Enginyers</h3>
                             </header>
-                            <p>Som Energia es una cooperativa de consumo de energía verde sin ánimo de lucro. Sus actividades principales son la comercialización y la producción de energía de origen renovable. Comprometidos a impulsar un cambio de modelo energético actual para alcanzar un modelo 100% renovable.</p>
+                            <p>Caja de Ingenieros es una sociedad cooperativa de ahorro y crédito que cuenta con más de 200.000 socios y desarrolla un modelo de banca personal, comercial, institucional y de empresa en el territorio español con la vocación de prestar servicio a los profesionales, ya sean ingenieros o de otras profesiones.</p>
                             <ul className="actions">
-                                <li><a href="https://www.somenergia.coop/es/hazte-socio-a/" target="_blank" className="button">Date de alta</a></li>
+                                <li><a href="https://www.caixaenginyers.com/es/soci-cooperatiu" target="_blank" className="button">Date de alta</a></li>
                             </ul>
                         </div>
                     </div>
                 </section>
                 <section>
                     <Link to="/generic" className="image">
-                        <img src={pic10} alt="" />
+                        <img src={pic03} alt="Photo by Alicia Perez on Unsplash" />
                     </Link>
                     <div className="content">
                         <div className="inner">

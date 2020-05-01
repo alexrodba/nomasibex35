@@ -8,3 +8,7 @@ yarn.lock
 # Build directory
 /public
 .DS_Store
+
+# Sublime stuff
+untitled.sublime-project
+untitled.sublime-workspace

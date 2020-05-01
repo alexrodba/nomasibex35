@@ -43,7 +43,7 @@ class HomeIndex extends React.Component {
                                 <h3>Banca</h3>
                                 <p>Dinero ético es dinero limpio</p>
                             </header>
-                            <Link to="/" className="link primary"></Link>
+                            <Link to="/banking" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic03})`}}>
                             <header className="major">
