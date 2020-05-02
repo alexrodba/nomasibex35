@@ -11,8 +11,8 @@ import pic03 from '../assets/images/banking/3.jpg'
 const Landing = (props) => (
     <Layout>
         <Helmet>
-            <title>Landing - Forty by HTML5 UP</title>
-            <meta name="description" content="Landing Page" />
+            <title>Alternativas al IBEX 35 en el sector bancario</title>
+            <meta name="description" content="Alternativas al IBEX 35 en el sector bancario" />
         </Helmet>
 
         <BannerLanding />
@@ -75,11 +75,11 @@ const Landing = (props) => (
                     <div className="content">
                         <div className="inner">
                             <header className="major">
-                                <h3>EnergÉtica</h3>
+                                <h3>Triodos Bank</h3>
                             </header>
-                            <p>EnergÉtica es una cooperativa de consumidores sin ánimo de lucro de energía 100% renovable. Comercializan electricidad de mínimo impacto ambiental a la par que te forman en eficiencia energética y autoconsumo.</p>
+                            <p>Desde 1980, Triodos Bank facilitan a personas, empresas e instituciones un uso del dinero que genere beneficios para la sociedad y la naturaleza. Por eso ofrecen financiación a empresas e iniciativas orientadas a generar un impacto social positivo.</p>
                             <ul className="actions">
-                                <li><a href="https://www.energetica.coop/hazte-cooperativista/" target="_blank" className="button">Date de alta</a></li>
+                                <li><a href="https://www.triodos.es/es/hazte-cliente" target="_blank" className="button">Date de alta</a></li>
                             </ul>
                         </div>
                     </div>

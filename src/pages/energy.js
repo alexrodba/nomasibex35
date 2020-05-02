@@ -12,7 +12,7 @@ const Landing = (props) => (
     <Layout>
         <Helmet>
             <title>Alternativas al IBEX 35 en el sector energético</title>
-            <meta name="description" content="Landing Page" />
+            <meta name="description" content="Alternativas al IBEX 35 en el sector energético" />
         </Helmet>
 
         <BannerLanding />
