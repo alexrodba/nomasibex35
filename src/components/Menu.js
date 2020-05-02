@@ -8,13 +8,13 @@ const Menu = (props) => (
             <ul className="links">
                 <li><Link onClick={props.onToggleMenu} to="/">Home</Link></li>
                 <li><Link onClick={props.onToggleMenu} to="/energy">Energéticas</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/">Banca</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/">Telefónicas</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/">Inmobiliarias</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/">Servicios</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/">Consumo</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/">Turismo</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/">Otros</Link></li>
+                <li><Link onClick={props.onToggleMenu} to="/banking">Banca</Link></li>
+                <li><Link onClick={props.onToggleMenu} to="/telcos">Telefónicas</Link></li>
+                <li><Link onClick={props.onToggleMenu} to="/realestate">Inmobiliarias</Link></li>
+                <li><Link onClick={props.onToggleMenu} to="/services">Servicios</Link></li>
+                <li><Link onClick={props.onToggleMenu} to="/consumer">Consumo</Link></li>
+                <li><Link onClick={props.onToggleMenu} to="/tourism">Turismo</Link></li>
+                <li><Link onClick={props.onToggleMenu} to="/others">Otros</Link></li>
             </ul>
   {/*          <ul className="actions vertical">
                 <li><a href="#" className="button special fit">Get Started</a></li>

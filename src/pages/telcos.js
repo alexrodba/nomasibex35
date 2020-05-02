@@ -33,9 +33,9 @@ const Telcos = (props) => (
             </section>
             <section id="two" className="spotlights">
                 <section>
-                    <Link to="https://www.fiarebancaetica.coop/cuenta-etica" className="image">
+                    <div className="image">
                         <img src={pic01} alt="Photo by Lance Anderson on Unsplash" />
-                    </Link>
+                    </div>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
@@ -49,9 +49,9 @@ const Telcos = (props) => (
                     </div>
                 </section>
                 <section>
-                    <Link to="/generic" className="image">
+                    <div className="image">
                         <img src={pic02} alt="Photo by ThisisEngineering RAEng on Unsplash" />
-                    </Link>
+                    </div>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
@@ -65,9 +65,9 @@ const Telcos = (props) => (
                     </div>
                 </section>
                 <section>
-                    <Link to="/generic" className="image">
+                    <div className="image">
                         <img src={pic03} alt="Photo by Hal Gatewood on Unsplash" />
-                    </Link>
+                    </div>
                     <div className="content">
                         <div className="inner">
                             <header className="major">

@@ -37,9 +37,9 @@ const Banking = (props) => (
             </section>
             <section id="two" className="spotlights">
                 <section>
-                    <Link to="https://www.fiarebancaetica.coop/cuenta-etica" className="image">
+                    <div className="image">
                         <img src={pic01} alt="Photo by Micheile Henderson on Unsplash" />
-                    </Link>
+                    </div>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
@@ -53,9 +53,9 @@ const Banking = (props) => (
                     </div>
                 </section>
                 <section>
-                    <Link to="/generic" className="image">
+                    <div className="image">
                         <img src={pic02} alt="Photo by ThisisEngineering RAEng on Unsplash" />
-                    </Link>
+                    </div>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
@@ -69,9 +69,9 @@ const Banking = (props) => (
                     </div>
                 </section>
                 <section>
-                    <Link to="/generic" className="image">
+                    <div className="image">
                         <img src={pic03} alt="Photo by Alicia Perez on Unsplash" />
-                    </Link>
+                    </div>
                     <div className="content">
                         <div className="inner">
                             <header className="major">

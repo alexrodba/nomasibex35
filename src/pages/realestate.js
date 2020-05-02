@@ -32,9 +32,9 @@ const RealEstate = (props) => (
             </section>
             <section id="two" className="spotlights">
                 <section>
-                    <Link to="/" className="image">
+                    <div className="image">
                         <img src={pic01} alt="Photo by Scott Graham on Unsplash" />
-                    </Link>
+                    </div>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
