@@ -1,16 +1,16 @@
 import React from 'react'
 
-const BannerEnergy = (props) => (
+const BannerOthers = (props) => (
     <section id="banner" className="style2">
         <div className="inner">
             <header className="major">
-                <h1>Energéticas</h1>
+                <h1>Otros</h1>
             </header>
             <div className="content">
-                <p>Listado de empresas del IBEX 35 proveedoras de Gas, Electricidad, Petróleo y Energía Eólica</p>
+                <p>Resto de empresas del IBEX 35 que no entran en las otras categorías</p>
             </div>
         </div>
     </section>
 )
 
-export default BannerEnergy
+export default BannerOthers

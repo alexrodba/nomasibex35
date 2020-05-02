@@ -50,42 +50,42 @@ class HomeIndex extends React.Component {
                                 <h3>Telefónicas</h3>
                                 <p>Somos tu voz</p>
                             </header>
-                            <Link to="/" className="link primary"></Link>
+                            <Link to="/telcos" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic05})`}}>
                             <header className="major">
                                 <h3>Immobiliarias</h3>
-                                <p>Casas para la gente</p>
+                                <p>Las casas son para la gente</p>
                             </header>
-                            <Link to="/" className="link primary"></Link>
+                            <Link to="/realestate" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic06})`}}>
                             <header className="major">
                                 <h3>Servicios</h3>
                                 <p>Sirviendo, por un mundo mejor</p>
                             </header>
-                            <Link to="/" className="link primary"></Link>
+                            <Link to="/services" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic07})`}}>
                             <header className="major">
                                 <h3>Consumo</h3>
                                 <p>Mirad la etiqueta antes de comprar</p>
                             </header>
-                            <Link to="/" className="link primary"></Link>
+                            <Link to="/consumer" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic04})`}}>
                             <header className="major">
                                 <h3>Turismo</h3>
                                 <p>Por un mundo más sostenible</p>
                             </header>
-                            <Link to="/" className="link primary"></Link>
+                            <Link to="/tourism" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic08})`}}>
                             <header className="major">
                                 <h3>Otros</h3>
                                 <p>Difíciles de clasificar</p>
                             </header>
-                            <Link to="/" className="link primary"></Link>
+                            <Link to="/others" className="link primary"></Link>
                         </article>
                     </section>
                     <section id="two">

@@ -2,20 +2,20 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
-import BannerLanding from '../components/BannerEnergy'
+import BannerEnergy from '../components/BannerEnergy'
 
-import pic08 from '../assets/images/hola.jpg'
-import pic09 from '../assets/images/som.jpg'
-import pic10 from '../assets/images/sole.jpg'
+import pic08 from '../assets/images/energy/hola.jpg'
+import pic09 from '../assets/images/energy/som.jpg'
+import pic10 from '../assets/images/energy/sole.jpg'
 
-const Landing = (props) => (
+const Energy = (props) => (
     <Layout>
         <Helmet>
             <title>Alternativas al IBEX 35 en el sector energético</title>
             <meta name="description" content="Alternativas al IBEX 35 en el sector energético" />
         </Helmet>
 
-        <BannerLanding />
+        <BannerEnergy />
 
         <div id="main">
             <section id="one">
@@ -91,4 +91,4 @@ const Landing = (props) => (
     </Layout>
 )
 
-export default Landing
+export default Energy

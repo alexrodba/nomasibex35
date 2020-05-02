@@ -2,20 +2,20 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
-import BannerLanding from '../components/BannerEnergy'
+import BannerBanking from '../components/BannerBanking'
 
 import pic01 from '../assets/images/banking/1.jpg'
 import pic02 from '../assets/images/banking/2.jpg'
 import pic03 from '../assets/images/banking/3.jpg'
 
-const Landing = (props) => (
+const Banking = (props) => (
     <Layout>
         <Helmet>
             <title>Alternativas al IBEX 35 en el sector bancario</title>
             <meta name="description" content="Alternativas al IBEX 35 en el sector bancario" />
         </Helmet>
 
-        <BannerLanding />
+        <BannerBanking />
 
         <div id="main">
             <section id="one">
@@ -90,4 +90,4 @@ const Landing = (props) => (
     </Layout>
 )
 
-export default Landing
+export default Banking
