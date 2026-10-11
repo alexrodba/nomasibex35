@@ -24,6 +24,19 @@ Decisions already taken (from the Q&A on 2026-10-11):
 
 ---
 
+## Status
+
+| Phase | State | Notes |
+|-------|-------|-------|
+| 1 Deploy pipeline | Code done (2026-10-12) | Pending on Àlex: enable Pages (source "GitHub Actions") in repo settings, set custom domain, point DNS at GitHub (see Phase 1 step 4). |
+| 2 Tech cleanup | Done (2026-10-12) | GA4 loaded by hand after consent instead of the gtag plugin (so nothing reaches Google before "Aceptar"). Image pipeline installed but wiring to `gatsby-plugin-image` deferred to Phase 3, where pages become data-driven. Lighthouse/a11y pass on tiles also moved to Phase 3. `/cookies/` page added early because the banner links to it. |
+| 3 Content model + i18n | Not started | |
+| 4 Content refresh | Not started | |
+| 5 Referrals | Not started | Reminder: GA4 id + invoicing entity. |
+| 6 Maintenance | Not started | |
+
+---
+
 ## 0. Where the repo stands today
 
 Audit of `master` at `20c7fe8`:
@@ -191,7 +204,7 @@ Changes vs the site's 2020 lists: **gone** — Bankia (absorbed by CaixaBank 202
 
 ## 3. Decisions on the open questions (2026-10-12)
 
-1. **GA4 Measurement ID** — not created yet. Phase 2 wires gtag behind an env var (`GA4_ID`); analytics stays off until it is set. **Reminder: ask Àlex for the id at the end of Phase 5.**
+1. **GA4 Measurement ID** — not created yet. Phase 2 wires gtag behind an env var (`GATSBY_GA4_ID`, a GitHub Actions repository variable); analytics stays off until it is set. **Reminder: ask Àlex for the id at the end of Phase 5.**
 2. **Domain** — registered at GoDaddy or cdmon (to confirm when doing the DNS cut-over). The AWS IPs are whatever the old host was; they stop mattering once DNS points at GitHub Pages.
 3. **Invoicing entity for affiliate payouts** — deferred to Phase 5.
 4. **"Otros" sector** — stays as is: the bucket for IBEX constituents that fit no other sector. Alternatives there are "where applicable".

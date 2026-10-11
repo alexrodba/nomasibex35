@@ -2,32 +2,48 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
-const Menu = (props) => (
-    <nav id="menu">
-        <div className="inner">
-            <ul className="links">
-                <li><Link onClick={props.onToggleMenu} to="/">Home</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/energy">Energéticas</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/banking">Banca</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/telcos">Telefónicas</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/realestate">Inmobiliarias</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/services">Servicios</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/consumer">Consumo</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/tourism">Turismo</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/others">Otros</Link></li>
-            </ul>
-  {/*          <ul className="actions vertical">
-                <li><a href="#" className="button special fit">Get Started</a></li>
-                <li><a href="#" className="button fit">Log In</a></li>
-            </ul>
-*/}
-        </div>
-        <a className="close" onClick={props.onToggleMenu} href="javascript:;">Close</a>
-    </nav>
+const links = [
+  ['/', 'Inicio'],
+  ['/energy/', 'Energéticas'],
+  ['/banking/', 'Banca'],
+  ['/telcos/', 'Telefónicas'],
+  ['/realestate/', 'Inmobiliarias'],
+  ['/services/', 'Servicios'],
+  ['/consumer/', 'Consumo'],
+  ['/tourism/', 'Turismo'],
+  ['/others/', 'Otros'],
+]
+
+const Menu = ({ onToggleMenu, isVisible }) => (
+  <nav id="menu" aria-hidden={!isVisible}>
+    <div className="inner">
+      <ul className="links">
+        {links.map(([to, label]) => (
+          <li key={to}>
+            <Link onClick={onToggleMenu} to={to}>
+              {label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+    <a
+      className="close"
+      href="#menu"
+      role="button"
+      onClick={(e) => {
+        e.preventDefault()
+        onToggleMenu()
+      }}
+    >
+      Cerrar
+    </a>
+  </nav>
 )
 
 Menu.propTypes = {
-    onToggleMenu: PropTypes.func
+  onToggleMenu: PropTypes.func.isRequired,
+  isVisible: PropTypes.bool,
 }
 
 export default Menu

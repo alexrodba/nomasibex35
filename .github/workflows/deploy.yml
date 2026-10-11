@@ -36,7 +36,7 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          GA4_ID: ${{ vars.GA4_ID }}
+          GATSBY_GA4_ID: ${{ vars.GATSBY_GA4_ID }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public

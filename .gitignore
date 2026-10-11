@@ -11,3 +11,6 @@ yarn.lock
 # Sublime stuff
 untitled.sublime-project
 untitled.sublime-workspace
+
+# Claude Code local config
+.claude/
