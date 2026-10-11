@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-forty-v2",
-  "description": "Gatsby Starter - Forty V2",
+  "name": "nomasibex35",
+  "description": "Alternativas a las empresas del IBEX 35",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "No Más IBEX 35",
   "dependencies": {
     "gatsby": "^5.16.1",
     "gatsby-plugin-google-analytics": "^5.16.0",
@@ -17,23 +17,28 @@
     "sass": "^1.105.1"
   },
   "keywords": [
+    "ibex35",
+    "alternativas",
+    "cooperativas",
     "gatsby"
   ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write 'src/**/*.js' '*.js'",
+    "clean": "gatsby clean",
+    "serve": "gatsby serve"
   },
   "devDependencies": {
     "prettier": "^3.9.10"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/alexrodba/nomasibex35"
   },
   "engines": {
-    "node": ">=18.0.0"
-  }
+    "node": ">=22 <26"
+  },
+  "private": true
 }

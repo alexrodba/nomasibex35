@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    groups:
+      gatsby:
+        patterns: ["gatsby*"]
+      all-others:
+        patterns: ["*"]
+        exclude-patterns: ["gatsby*"]
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
