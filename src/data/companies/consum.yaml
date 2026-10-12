@@ -1,0 +1,17 @@
+slug: consum
+name: "Consum"
+sector: consumo
+website: https://www.consum.es
+ownership: cooperativa
+owner: null
+hq: "Valencia"
+tags: [cooperativa, local]
+description:
+  es: "Consum es la cooperativa de supermercados valenciana, con más de 1.000 tiendas y millones de socios-clientes que participan en los resultados. Hacerse socio es gratuito."
+  ca: "Consum és la cooperativa de supermercats valenciana, amb més de 1.000 botigues i milions de socis-clients que participen en els resultats. Fer-se soci és gratuït."
+cta:
+  url: https://www.consum.es/bienvenido-registro/
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

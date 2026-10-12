@@ -1,0 +1,17 @@
+slug: digi
+name: "Digi"
+sector: telefonia
+website: https://www.digimobil.es
+ownership: multinacional
+owner: "DIGI Communications (Rumanía)"
+hq: "Madrid"
+tags: [multinacional]
+description:
+  es: "Digi ofrece móvil y fibra con precios transparentes, sin permanencia y sin letra pequeña, y despliega red de fibra propia en España, donde ya supera los 11 millones de clientes. Es filial del grupo rumano DIGI Communications y desde julio de 2026 cotiza en la Bolsa de Madrid: no es IBEX 35, pero sí una gran multinacional."
+  ca: "Digi ofereix mòbil i fibra amb preus transparents, sense permanència i sense lletra petita, i desplega xarxa de fibra pròpia a Espanya, on ja supera els 11 milions de clients. És filial del grup romanès DIGI Communications i des del juliol del 2026 cotitza a la Borsa de Madrid: no és IBEX 35, però sí una gran multinacional."
+cta:
+  url: https://www.digimobil.es/
+  referral: digi
+image: ../../assets/images/companies/digi.jpg
+imageCredit: "Photo by Lance Anderson on Unsplash"
+lastVerified: 2026-10-12

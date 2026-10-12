@@ -1,33 +1,69 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
+import { graphql, Link, useStaticQuery } from 'gatsby'
+import { getDictionary, localizePath, pick } from '../i18n'
 
-const Menu = (props) => (
-    <nav id="menu">
-        <div className="inner">
-            <ul className="links">
-                <li><Link onClick={props.onToggleMenu} to="/">Home</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/energy">Energéticas</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/banking">Banca</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/telcos">Telefónicas</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/realestate">Inmobiliarias</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/services">Servicios</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/consumer">Consumo</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/tourism">Turismo</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/others">Otros</Link></li>
-            </ul>
-  {/*          <ul className="actions vertical">
-                <li><a href="#" className="button special fit">Get Started</a></li>
-                <li><a href="#" className="button fit">Log In</a></li>
-            </ul>
-*/}
-        </div>
-        <a className="close" onClick={props.onToggleMenu} href="javascript:;">Close</a>
+const Menu = ({ locale, onToggleMenu, isVisible }) => {
+  const t = getDictionary(locale)
+  const data = useStaticQuery(graphql`
+    query MenuSectors {
+      allSectorsYaml(sort: { order: ASC }) {
+        nodes {
+          key
+          slug {
+            es
+            ca
+          }
+          name {
+            es
+            ca
+          }
+        }
+      }
+    }
+  `)
+  const items = [
+    [localizePath(locale, '/'), t.nav.home],
+    ...data.allSectorsYaml.nodes.map((s) => [
+      localizePath(locale, `/${pick(s.slug, locale)}/`),
+      pick(s.name, locale),
+    ]),
+    [localizePath(locale, `/${t.slugs.directory}/`), t.nav.directory],
+    [localizePath(locale, `/${t.slugs.about}/`), t.nav.about],
+  ]
+
+  return (
+    <nav id="menu" aria-hidden={!isVisible}>
+      <div className="inner">
+        <ul className="links">
+          {items.map(([to, label]) => (
+            <li key={to}>
+              <Link onClick={onToggleMenu} to={to}>
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <a
+        className="close"
+        href="#menu"
+        role="button"
+        onClick={(e) => {
+          e.preventDefault()
+          onToggleMenu()
+        }}
+      >
+        {t.nav.close}
+      </a>
     </nav>
-)
+  )
+}
 
 Menu.propTypes = {
-    onToggleMenu: PropTypes.func
+  locale: PropTypes.string.isRequired,
+  onToggleMenu: PropTypes.func.isRequired,
+  isVisible: PropTypes.bool,
 }
 
 export default Menu

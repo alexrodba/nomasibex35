@@ -1,0 +1,17 @@
+slug: ecoalf
+name: "Ecoalf"
+sector: consumo
+website: https://ecoalf.com
+ownership: pyme
+owner: "Treïs (66%) y fundador"
+hq: "Madrid"
+tags: [bcorp, local]
+description:
+  es: "Ecoalf es la marca madrileña de moda hecha con materiales reciclados, certificada B Corp. Su accionista mayoritario es el vehículo de inversión Treïs."
+  ca: "Ecoalf és la marca madrilenya de moda feta amb materials reciclats, certificada B Corp. El seu accionista majoritari és el vehicle d'inversió Treïs."
+cta:
+  url: https://ecoalf.com
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

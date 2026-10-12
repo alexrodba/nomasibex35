@@ -1,0 +1,17 @@
+slug: octopus-energy
+name: "Octopus Energy"
+sector: energia
+website: https://octopusenergy.es
+ownership: multinacional
+owner: "Octopus Energy Group (Reino Unido)"
+hq: "Valencia"
+tags: [renovable, multinacional]
+description:
+  es: "Octopus Energy vende luz y gas 100% renovables y supera el medio millón de clientes en España. Es filial del grupo británico Octopus Energy: no es IBEX 35, pero sí una gran multinacional."
+  ca: "Octopus Energy ven llum i gas 100% renovables i supera el mig milió de clients a Espanya. És filial del grup britànic Octopus Energy: no és IBEX 35, però sí una gran multinacional."
+cta:
+  url: https://octopusenergy.es/tarifas
+  referral: octopus
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

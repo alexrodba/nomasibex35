@@ -1,0 +1,20 @@
+slug: mutua-madrilena
+name: "Mutua Madrileña"
+sector: servicios
+website: https://www.mutua.es
+ownership: mutua
+owner: null
+hq: "Madrid"
+tags: [mutua, local]
+description:
+  es: "Mutua Madrileña es la mayor mutua de seguros de España (coche, hogar, salud). Al ser mutua no tiene accionistas."
+  ca: "Mutua Madrileña és la mútua d'assegurances més gran d'Espanya (cotxe, llar, salut). En ser mútua no té accionistes."
+warning:
+  es: "Es socia al 50% de CaixaBank (IBEX 35) en SegurCaixa Adeslas, que vende seguros de salud a través de la red de CaixaBank."
+  ca: "És sòcia al 50% de CaixaBank (IBEX 35) a SegurCaixa Adeslas, que ven assegurances de salut a través de la xarxa de CaixaBank."
+cta:
+  url: https://www.mutua.es/seguros-coche/
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

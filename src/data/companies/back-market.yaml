@@ -1,0 +1,17 @@
+slug: back-market
+name: "Back Market"
+sector: consumo
+website: https://www.backmarket.es
+ownership: multinacional
+owner: "Back Market (Francia)"
+hq: "París"
+tags: [bcorp, multinacional]
+description:
+  es: "Back Market es el marketplace francés de electrónica reacondicionada, certificado B Corp desde 2023. Alternativa a comprar nuevo, aunque es una multinacional con capital riesgo."
+  ca: "Back Market és el marketplace francès d'electrònica recondicionada, certificat B Corp des del 2023. Alternativa a comprar nou, tot i que és una multinacional amb capital risc."
+cta:
+  url: https://www.backmarket.es/es-es
+  referral: back-market
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

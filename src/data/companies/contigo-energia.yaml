@@ -1,0 +1,17 @@
+slug: contigo-energia
+name: "Contigo Energía"
+sector: energia
+website: https://contigoenergia.com
+ownership: pyme
+owner: null
+hq: "Madrid"
+tags: [renovable, local]
+description:
+  es: "Contigo Energía, antes Gesternova, es una comercializadora 100% renovable que funciona desde 2005 y nació de productores renovables de la asociación APPA. Es una sociedad anónima no cotizada."
+  ca: "Contigo Energía, abans Gesternova, és una comercialitzadora 100% renovable que funciona des del 2005 i va néixer de productors renovables de l'associació APPA. És una societat anònima no cotitzada."
+cta:
+  url: https://contigoenergia.com/hogares/tarifas-luz/
+  referral: contigo
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

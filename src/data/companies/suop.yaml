@@ -1,0 +1,17 @@
+slug: suop
+name: "Suop"
+sector: telefonia
+website: https://www.suop.es
+ownership: pyme
+owner: null
+hq: "Madrid"
+tags: [local]
+description:
+  es: "Suop es un operador móvil virtual independiente fundado en 2013, con tarifas sencillas y sin permanencia, sobre la red de Orange."
+  ca: "Suop és un operador mòbil virtual independent fundat el 2013, amb tarifes senzilles i sense permanència, sobre la xarxa d'Orange."
+cta:
+  url: https://www.suop.es/tarifas
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

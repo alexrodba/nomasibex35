@@ -1,0 +1,17 @@
+slug: iryo
+name: "Iryo"
+sector: turismo
+website: https://iryo.eu
+ownership: multinacional
+owner: "Trenitalia (51%), Air Nostrum, Globalvia"
+hq: "Madrid"
+tags: [multinacional]
+description:
+  es: "Iryo es el operador privado de alta velocidad entre Madrid, Barcelona, Valencia y Andalucía, controlado por la italiana Trenitalia."
+  ca: "Iryo és l'operador privat d'alta velocitat entre Madrid, Barcelona, València i Andalusia, controlat per la italiana Trenitalia."
+cta:
+  url: https://iryo.eu
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

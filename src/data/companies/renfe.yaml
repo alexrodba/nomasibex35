@@ -1,0 +1,17 @@
+slug: renfe
+name: "Renfe"
+sector: turismo
+website: https://www.renfe.com
+ownership: publica
+owner: "Estado (Ministerio de Transportes)"
+hq: "Madrid"
+tags: [publica]
+description:
+  es: "Renfe es el operador ferroviario público del Estado: AVE, Avlo, Media Distancia y Cercanías. Frente a Iberia y Vueling (IAG) y los aeropuertos de Aena, el tren es la alternativa con menos emisiones."
+  ca: "Renfe és l'operador ferroviari públic de l'Estat: AVE, Avlo, Mitjana Distància i Rodalies. Davant d'Iberia i Vueling (IAG) i els aeroports d'Aena, el tren és l'alternativa amb menys emissions."
+cta:
+  url: https://www.renfe.com/es/es
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

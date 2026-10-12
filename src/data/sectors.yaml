@@ -1,0 +1,100 @@
+# One entry per sector. `key` is the stable id used by companies and ibex35.yaml.
+# `slug` is the URL segment per language. `style` picks the banner tint (style1..6).
+- key: energia
+  order: 1
+  style: style2
+  slug: { es: energia, ca: energia }
+  name: { es: Energéticas, ca: Energètiques }
+  tagline: { es: Poder para el pueblo, ca: Poder per al poble }
+  heading: { es: 'El poder, para el pueblo', ca: 'El poder, per al poble' }
+  banner:
+    es: Empresas del IBEX 35 que venden gas, electricidad, petróleo y renovables
+    ca: Empreses de l'IBEX 35 que venen gas, electricitat, petroli i renovables
+  image: ../assets/images/sectors/energia.jpg
+
+- key: banca
+  order: 2
+  style: style1
+  slug: { es: banca, ca: banca }
+  name: { es: Banca, ca: Banca }
+  tagline: { es: Dinero ético es dinero limpio, ca: Diners ètics són diners nets }
+  heading: { es: Dinero ético es dinero limpio, ca: Diners ètics són diners nets }
+  banner:
+    es: Bancos del IBEX 35
+    ca: Bancs de l'IBEX 35
+  image: ../assets/images/sectors/banca.jpg
+
+- key: telefonia
+  order: 3
+  style: style3
+  slug: { es: telefonia, ca: telefonia }
+  name: { es: Telefónicas, ca: Telefòniques }
+  tagline: { es: Somos tu voz, ca: Som la teva veu }
+  heading: { es: Somos tu voz, ca: Som la teva veu }
+  banner:
+    es: Operadoras de telecomunicaciones del IBEX 35
+    ca: Operadores de telecomunicacions de l'IBEX 35
+  image: ../assets/images/sectors/telefonia.jpg
+
+- key: vivienda
+  order: 4
+  style: style4
+  slug: { es: vivienda, ca: habitatge }
+  name: { es: Vivienda, ca: Habitatge }
+  tagline: { es: Las casas son para la gente, ca: Les cases són per a la gent }
+  heading: { es: Las casas son para la gente, ca: Les cases són per a la gent }
+  banner:
+    es: Inmobiliarias, constructoras e infraestructuras del IBEX 35
+    ca: Immobiliàries, constructores i infraestructures de l'IBEX 35
+  image: ../assets/images/sectors/vivienda.jpg
+
+- key: servicios
+  order: 5
+  style: style5
+  slug: { es: servicios, ca: serveis }
+  name: { es: Servicios, ca: Serveis }
+  tagline: { es: 'Sirviendo, por un mundo mejor', ca: 'Servint, per un món millor' }
+  heading: { es: 'Sirviendo, por un mundo mejor', ca: 'Servint, per un món millor' }
+  banner:
+    es: Seguros, tecnología y logística del IBEX 35
+    ca: Assegurances, tecnologia i logística de l'IBEX 35
+  image: ../assets/images/sectors/servicios.jpg
+
+- key: consumo
+  order: 6
+  style: style6
+  slug: { es: consumo, ca: consum }
+  name: { es: Consumo, ca: Consum }
+  tagline: { es: Mira la etiqueta antes de comprar, ca: Mira l'etiqueta abans de comprar }
+  heading: { es: Mira la etiqueta antes de comprar, ca: Mira l'etiqueta abans de comprar }
+  banner:
+    es: Moda, cosmética y consumo del IBEX 35
+    ca: Moda, cosmètica i consum de l'IBEX 35
+  image: ../assets/images/sectors/consumo.jpg
+
+- key: turismo
+  order: 7
+  style: style2
+  slug: { es: turismo, ca: turisme }
+  name: { es: Turismo, ca: Turisme }
+  tagline: { es: Por un mundo más sostenible, ca: Per un món més sostenible }
+  heading: { es: Por un mundo más sostenible, ca: Per un món més sostenible }
+  banner:
+    es: Aerolíneas, aeropuertos y hoteles del IBEX 35
+    ca: Aerolínies, aeroports i hotels de l'IBEX 35
+  image: ../assets/images/sectors/turismo.jpg
+
+- key: otros
+  order: 8
+  style: style4
+  slug: { es: otros, ca: altres }
+  name: { es: Otros, ca: Altres }
+  tagline: { es: Difíciles de clasificar, ca: Difícils de classificar }
+  heading: { es: Resto de empresas del IBEX 35, ca: Resta d'empreses de l'IBEX 35 }
+  banner:
+    es: Empresas del IBEX 35 que no encajan en las otras categorías
+    ca: Empreses de l'IBEX 35 que no encaixen en les altres categories
+  image: ../assets/images/sectors/otros.jpg
+  note:
+    es: "Para estas empresas no hay una alternativa de consumo sensata: nadie elige su proveedor de acero, y los hemoderivados y fármacos de Grifols y Rovi los prescribe el médico. Frente a Solaria, la alternativa ciudadana es el autoconsumo y las cooperativas de energía que listamos en Energéticas. Si conoces una alternativa real, propónla."
+    ca: "Per a aquestes empreses no hi ha una alternativa de consum sensata: ningú tria el seu proveïdor d'acer, i els hemoderivats i fàrmacs de Grifols i Rovi els prescriu el metge. Davant de Solaria, l'alternativa ciutadana és l'autoconsum i les cooperatives d'energia que llistem a Energètiques. Si coneixes una alternativa real, proposa-la."

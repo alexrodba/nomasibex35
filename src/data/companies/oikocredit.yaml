@@ -1,0 +1,17 @@
+slug: oikocredit
+name: "Oikocredit"
+sector: banca
+website: https://www.oikocredit.org/es
+ownership: cooperativa
+owner: "Oikocredit (cooperativa, Países Bajos)"
+hq: "Amersfoort (Países Bajos)"
+tags: [cooperativa, banca-etica]
+description:
+  es: "Oikocredit es una cooperativa internacional de finanzas éticas, con asociaciones en Cataluña, Euskadi y Sevilla, que invierte en microfinanzas, agricultura y renovables en países del Sur. Es inversión de impacto desde 200 €, no una cuenta corriente."
+  ca: "Oikocredit és una cooperativa internacional de finances ètiques, amb associacions a Catalunya, Euskadi i Sevilla, que inverteix en microfinances, agricultura i renovables en països del Sud. És inversió d'impacte des de 200 €, no un compte corrent."
+cta:
+  url: https://www.oikocredit.org/es/invertir
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

@@ -2,7 +2,6 @@
 .cache
 node_modules
 yarn-error.log
-package-lock.json
 yarn.lock
 
 # Build directory
@@ -12,3 +11,6 @@ yarn.lock
 # Sublime stuff
 untitled.sublime-project
 untitled.sublime-workspace
+
+# Claude Code local config
+.claude/

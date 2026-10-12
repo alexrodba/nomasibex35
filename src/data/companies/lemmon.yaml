@@ -1,0 +1,17 @@
+slug: lemmon
+name: "Lemmon"
+sector: telefonia
+website: https://www.lemmon.es
+ownership: pyme
+owner: "BB Phone Levante S.L.U."
+hq: "Elche (Alicante)"
+tags: [local]
+description:
+  es: "Lemmon, antes Lemonvil, es un operador móvil virtual independiente de Elche con capital español, que usa la red de Orange y ofrece fibra."
+  ca: "Lemmon, abans Lemonvil, és un operador mòbil virtual independent d'Elx amb capital espanyol, que fa servir la xarxa d'Orange i ofereix fibra."
+cta:
+  url: https://www.lemmon.es/
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

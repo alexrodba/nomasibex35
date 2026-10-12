@@ -1,0 +1,17 @@
+slug: pangea
+name: "Pangea"
+sector: servicios
+website: https://pangea.org
+ownership: asociacion
+owner: null
+hq: "Barcelona"
+tags: [local]
+description:
+  es: "Pangea es una asociación sin ánimo de lucro de Barcelona que desde 1993 ofrece correo, alojamiento web e internet ético a entidades y particulares."
+  ca: "Pangea és una associació sense ànim de lucre de Barcelona que des del 1993 ofereix correu, allotjament web i internet ètic a entitats i particulars."
+cta:
+  url: https://pangea.org
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

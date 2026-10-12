@@ -1,0 +1,17 @@
+slug: soy-ecoturista
+name: "Soy Ecoturista"
+sector: turismo
+website: https://www.soyecoturista.com
+ownership: asociacion
+owner: "Asociación de Ecoturismo en España"
+hq: "Madrid"
+tags: [local]
+description:
+  es: "Soy Ecoturista es la marca oficial Ecoturismo en España, con más de 800 empresas adheridas junto a espacios naturales protegidos, gestionada por una asociación sin ánimo de lucro."
+  ca: "Soy Ecoturista és la marca oficial Ecoturisme a Espanya, amb més de 800 empreses adherides al costat d'espais naturals protegits, gestionada per una associació sense ànim de lucre."
+cta:
+  url: https://www.soyecoturista.com/es/
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

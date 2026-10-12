@@ -1,0 +1,20 @@
+slug: finetwork
+name: "Finetwork"
+sector: telefonia
+website: https://www.finetwork.com
+ownership: pyme
+owner: null
+hq: "Alicante"
+tags: [local]
+description:
+  es: "Finetwork es un operador de fibra y móvil de Alicante que usa la red de Vodafone y creció rápido con precios bajos."
+  ca: "Finetwork és un operador de fibra i mòbil d'Alacant que fa servir la xarxa de Vodafone i va créixer ràpid amb preus baixos."
+warning:
+  es: "En 2025 Vodafone (Zegona) intentó tomar el control por una reestructuración de deuda; un tribunal lo anuló en 2026 y los fundadores recuperaron la empresa, pero el litigio sigue abierto."
+  ca: "El 2025 Vodafone (Zegona) va intentar prendre'n el control per una reestructuració del deute; un tribunal ho va anul·lar el 2026 i els fundadors van recuperar l'empresa, però el litigi continua obert."
+cta:
+  url: https://www.finetwork.com/tarifas-fibra-movil
+  referral: finetwork
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

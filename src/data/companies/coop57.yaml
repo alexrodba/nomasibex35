@@ -1,0 +1,17 @@
+slug: coop57
+name: "Coop57"
+sector: banca
+website: https://coop57.coop
+ownership: cooperativa
+owner: null
+hq: "Barcelona"
+tags: [cooperativa, banca-etica, local]
+description:
+  es: "Coop57 es una cooperativa de servicios financieros éticos que financia proyectos de la economía social y solidaria. No es un banco: no tiene cuentas ni tarjetas; las personas aportan ahorro como socias colaboradoras."
+  ca: "Coop57 és una cooperativa de serveis financers ètics que finança projectes de l'economia social i solidària. No és un banc: no té comptes ni targetes; les persones hi aporten estalvi com a sòcies col·laboradores."
+cta:
+  url: https://coop57.coop/es/hazte_socia_o/personas
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

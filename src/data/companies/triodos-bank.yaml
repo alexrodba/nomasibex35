@@ -1,0 +1,20 @@
+slug: triodos-bank
+name: "Triodos Bank"
+sector: banca
+website: https://www.triodos.es
+ownership: multinacional
+owner: "Triodos Bank N.V. (Países Bajos)"
+hq: "Madrid (sucursal española)"
+tags: [banca-etica, multinacional]
+description:
+  es: "Desde 1980, Triodos Bank facilita a personas, empresas e instituciones un uso del dinero que genere beneficios para la sociedad y la naturaleza. Solo financia empresas e iniciativas con impacto social o ambiental positivo y publica a quién presta."
+  ca: "Des del 1980, Triodos Bank facilita a persones, empreses i institucions un ús dels diners que generi beneficis per a la societat i la natura. Només finança empreses i iniciatives amb impacte social o ambiental positiu i publica a qui presta."
+warning:
+  es: "Los titulares de sus certificados de depósito (CDA) perdieron gran parte de su inversión cuando el banco congeló su mercado interno en 2020; el Supremo dio la razón al banco en 2025. Afecta a inversores, no a clientes de cuenta."
+  ca: "Els titulars dels seus certificats de dipòsit (CDA) van perdre gran part de la inversió quan el banc va congelar el mercat intern el 2020; el Suprem va donar la raó al banc el 2025. Afecta inversors, no clients de compte."
+cta:
+  url: https://www.triodos.es/es/hazte-cliente
+  referral: null
+image: ../../assets/images/companies/triodos-bank.jpg
+imageCredit: "Photo by Alicia Perez on Unsplash"
+lastVerified: 2026-10-12

@@ -1,0 +1,17 @@
+slug: veritas
+name: "Veritas"
+sector: consumo
+website: https://www.veritas.es
+ownership: pyme
+owner: null
+hq: "Barcelona"
+tags: [bcorp, local]
+description:
+  es: "Veritas es la cadena líder de supermercados ecológicos, con más de 80 tiendas y venta online, y la única cadena de supermercados B Corp de España. Es propiedad de varias familias catalanas."
+  ca: "Veritas és la cadena líder de supermercats ecològics, amb més de 80 botigues i venda en línia, i l'única cadena de supermercats B Corp d'Espanya. És propietat de diverses famílies catalanes."
+cta:
+  url: https://www.veritas.es
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

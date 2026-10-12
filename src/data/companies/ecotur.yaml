@@ -1,0 +1,17 @@
+slug: ecotur
+name: "Ecotur"
+sector: turismo
+website: https://www.ecotur.es
+ownership: fundacion
+owner: "Fundación Ecoagroturismo"
+hq: "Huesca"
+tags: [local]
+description:
+  es: "Ecotur es el directorio y central de reservas de alojamientos y actividades de ecoturismo certificados de la Fundación Ecoagroturismo, sin ánimo de lucro."
+  ca: "Ecotur és el directori i central de reserves d'allotjaments i activitats d'ecoturisme certificats de la Fundació Ecoagroturisme, sense ànim de lucre."
+cta:
+  url: https://www.ecotur.es/turismo-ecologico-responsable
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

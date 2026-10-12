@@ -1,0 +1,17 @@
+slug: alsa
+name: "Alsa"
+sector: turismo
+website: https://www.alsa.com
+ownership: multinacional
+owner: "Mobico Group (Reino Unido)"
+hq: "Oviedo"
+tags: [multinacional]
+description:
+  es: "Alsa es el mayor operador de autobuses de España. Pertenece al grupo británico Mobico (antes National Express)."
+  ca: "Alsa és l'operador d'autobusos més gran d'Espanya. Pertany al grup britànic Mobico (abans National Express)."
+cta:
+  url: https://www.alsa.com
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

@@ -1,7 +1,14 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
+import React from 'react'
 
-// You can delete this file if you're not using it
+export const onRenderBody = ({ setHtmlAttributes, setHeadComponents }) => {
+  setHtmlAttributes({ lang: 'es' })
+  if (process.env.GATSBY_GA4_ID) {
+    setHeadComponents([
+      <link
+        key="preconnect-gtm"
+        rel="preconnect"
+        href="https://www.googletagmanager.com"
+      />,
+    ])
+  }
+}

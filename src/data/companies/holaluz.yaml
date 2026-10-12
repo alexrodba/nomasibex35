@@ -1,0 +1,20 @@
+slug: holaluz
+name: "HolaLuz"
+sector: energia
+website: https://www.holaluz.com
+ownership: pyme
+owner: null
+hq: "Barcelona"
+tags: [renovable, local]
+description:
+  es: "HolaLuz vende solamente energía de origen 100% renovable, con tarifas personalizadas y autoconsumo con placas solares. Es una empresa de Barcelona que cotiza en BME Growth; desde 2025 su principal accionista es el fondo Icosium."
+  ca: "HolaLuz ven només energia d'origen 100% renovable, amb tarifes personalitzades i autoconsum amb plaques solars. És una empresa de Barcelona que cotitza a BME Growth; des del 2025 el seu principal accionista és el fons Icosium."
+warning:
+  es: "Entre 2024 y 2026 HolaLuz ha pasado por una reestructuración de deuda y un expediente del Ministerio para retirarle la licencia de comercializadora, archivado en agosto de 2026. Sigue operando, pero conviene saberlo."
+  ca: "Entre el 2024 i el 2026 HolaLuz ha passat per una reestructuració del deute i un expedient del Ministeri per retirar-li la llicència de comercialitzadora, arxivat l'agost del 2026. Continua operant, però convé saber-ho."
+cta:
+  url: https://alta.holaluz.com/es/
+  referral: holaluz
+image: ../../assets/images/companies/holaluz.jpg
+imageCredit: "Foto: HolaLuz"
+lastVerified: 2026-10-12

@@ -1,0 +1,17 @@
+slug: caes
+name: "CAES"
+sector: servicios
+website: https://caes.coop
+ownership: cooperativa
+owner: null
+hq: "Barcelona y Madrid"
+tags: [cooperativa, banca-etica, local]
+description:
+  es: "CAES (Cooperación para el Aseguramiento Ético y Solidario) es el proyecto de seguro ético de las corredurías cooperativas Arç (Barcelona) y Seryes (Madrid). Estudia cada solicitud priorizando aseguradoras certificadas EthSI."
+  ca: "CAES (Cooperació per a l'Assegurament Ètic i Solidari) és el projecte d'assegurança ètica de les corredories cooperatives Arç (Barcelona) i Seryes (Madrid). Estudia cada sol·licitud prioritzant asseguradores certificades EthSI."
+cta:
+  url: https://caes.coop/contratar/
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

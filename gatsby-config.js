@@ -1,30 +1,54 @@
 module.exports = {
   siteMetadata: {
-    title: "No Más IBEX 35",
-    author: "Antoni Mon",
-    description: "No Más IBEX 35 es un sitio web sin ánimo de lucro que proporciona información pública a quien quiera encontrar otras opciones a las empresas listadas en el IBEX 35. Algunos de los enlaces a las empresas alternativas son de afiliación y reportan unos ingresos económicos a No Más IBEX 35. Usaremos estos ingresos para cubrir los gastos básicos de este sitio web y el resto lo donaremos a beneficiencia."
+    title: 'No Más IBEX 35',
+    siteUrl: 'https://nomasibex35.com',
+    description:
+      'No Más IBEX 35 es un sitio web sin ánimo de lucro que proporciona información pública a quien quiera encontrar otras opciones a las empresas listadas en el IBEX 35. Algunos de los enlaces a las empresas alternativas son de afiliación y reportan unos ingresos a No Más IBEX 35. Usaremos estos ingresos para cubrir los gastos básicos de este sitio web y el resto lo donaremos a beneficencia.',
+    defaultLang: 'es',
+    languages: ['es', 'ca'],
+    repository: 'https://github.com/alexrodba/nomasibex35',
+    ga4Id: process.env.GATSBY_GA4_ID || '',
   },
+  trailingSlash: 'always',
   plugins: [
-    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    'gatsby-transformer-yaml',
+    'gatsby-transformer-remark',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-source-filesystem',
+      options: { name: 'images', path: `${__dirname}/src/assets/images` },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: { name: 'data', path: `${__dirname}/src/data` },
+    },
+    {
+      resolve: 'gatsby-plugin-sass',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        sassOptions: { silenceDeprecations: ['legacy-js-api'] },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'No Más IBEX 35',
+        short_name: 'No Más IBEX 35',
+        description: 'Alternativas a las empresas del IBEX 35',
+        lang: 'es',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#242943',
+        theme_color: '#242943',
         display: 'minimal-ui',
-        icon: 'src/assets/images/website-icon.png', // This path is relative to the root of the site.
+        icon: 'src/assets/images/website-icon.png',
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-sitemap',
       options: {
-        trackingId: "UA-165357813-1",
+        excludes: ['/offline-plugin-app-shell-fallback/'],
       },
     },
-    'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
   ],
 }

@@ -1,0 +1,65 @@
+name: Content reminders
+
+# Two reminders, both as GitHub issues:
+# - after each IBEX 35 review by BME's Comité Asesor Técnico (June and December),
+#   update src/data/ibex35.yaml;
+# - monthly, list companies whose lastVerified is about to pass the 12-month
+#   build gate in gatsby-node.js, so they get re-checked before the build breaks.
+on:
+  schedule:
+    - cron: '0 8 12 6,12 *' # 12 June and 12 December, 08:00 UTC (CAT meets ~10th)
+    - cron: '0 8 1 * *' # 1st of every month: stale companies
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  ibex-review:
+    if: github.event.schedule == '0 8 12 6,12 *' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open the IBEX review issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          title="Revisar la composición del IBEX 35 ($(date -u +%B\ %Y))"
+          if gh issue list --state open --search "\"$title\" in:title" --json number --jq 'length' | grep -qv '^0$'; then
+            echo "Issue already open"; exit 0
+          fi
+          gh issue create --title "$title" --label mantenimiento --body "$(cat <<'EOF'
+          El Comité Asesor Técnico de BME ha revisado el IBEX 35 este mes.
+
+          - [ ] Comprobar entradas y salidas en https://www.bolsasymercados.es/bme-exchange/es/Indices/Ibex (o prensa: Expansión, Cinco Días).
+          - [ ] Actualizar `src/data/ibex35.yaml` (nombre, sector, nota) y la fecha `lastReviewed` del encabezado.
+          - [ ] Si una empresa listada como alternativa ha sido comprada por una del IBEX, retirarla (la build fallará si `owner` coincide).
+          - [ ] Revisar `src/data/pages/transparencia.*.md` si cambia algo relevante.
+          EOF
+          )"
+
+  stale-companies:
+    if: github.event.schedule == '0 8 1 * *' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: List companies verified more than 11 months ago
+        id: stale
+        run: |
+          node scripts/stale-companies.js 330 > stale.md
+          echo "count=$(grep -c '^- ' stale.md || true)" >> "$GITHUB_OUTPUT"
+          cat stale.md
+      - name: Open or update the issue
+        if: steps.stale.outputs.count != '0'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: 'Empresas pendientes de revisar (lastVerified a punto de caducar)'
+          content-filepath: stale.md
+          labels: mantenimiento
+          issue-number: ${{ vars.STALE_CHECK_ISSUE }}

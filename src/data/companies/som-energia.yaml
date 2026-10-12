@@ -1,0 +1,17 @@
+slug: som-energia
+name: "Som Energia"
+sector: energia
+website: https://www.somenergia.coop
+ownership: cooperativa
+owner: null
+hq: "Girona"
+tags: [cooperativa, renovable, local]
+description:
+  es: "Som Energia es una cooperativa de consumo de energía verde sin ánimo de lucro. Comercializa y produce energía de origen renovable y trabaja por un cambio de modelo energético hacia el 100% renovable. Para contratar hay que hacerse socio con una aportación de 100 € que se devuelve si te das de baja."
+  ca: "Som Energia és una cooperativa de consum d'energia verda sense ànim de lucre. Comercialitza i produeix energia d'origen renovable i treballa per un canvi de model energètic cap al 100% renovable. Per contractar cal fer-se soci amb una aportació de 100 € que es retorna si et dones de baixa."
+cta:
+  url: https://www.somenergia.coop/es/hazte-socio-a/
+  referral: null
+image: ../../assets/images/companies/som-energia.jpg
+imageCredit: "Foto: Som Energia"
+lastVerified: 2026-10-12

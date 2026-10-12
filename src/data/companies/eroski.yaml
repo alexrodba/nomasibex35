@@ -1,0 +1,17 @@
+slug: eroski
+name: "Eroski"
+sector: consumo
+website: https://www.eroski.es
+ownership: cooperativa
+owner: "Grupo Mondragón (cooperativa)"
+hq: "Elorrio (Bizkaia)"
+tags: [cooperativa, local]
+description:
+  es: "Eroski es la cooperativa de supermercados del Grupo Mondragón, con millones de socios cliente en su programa Eroski Club."
+  ca: "Eroski és la cooperativa de supermercats del Grup Mondragón, amb milions de socis client al seu programa Eroski Club."
+cta:
+  url: https://www.eroski.es/eroski-club/
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

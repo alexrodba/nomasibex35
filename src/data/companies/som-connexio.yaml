@@ -1,0 +1,17 @@
+slug: som-connexio
+name: "Som Connexió"
+sector: telefonia
+website: https://somconnexio.coop
+ownership: cooperativa
+owner: null
+hq: "Barcelona"
+tags: [cooperativa, local]
+description:
+  es: "Som Connexió (Somos Conexión) es una cooperativa de consumo de telefonía móvil y fibra con unas 9.500 personas socias, que usa la red de Orange. Para contratar hay que asociarse con 100 € reembolsables."
+  ca: "Som Connexió és una cooperativa de consum de telefonia mòbil i fibra amb unes 9.500 persones sòcies, que fa servir la xarxa d'Orange. Per contractar cal associar-s'hi amb 100 € reemborsables."
+cta:
+  url: https://somconnexio.coop/es/nosotros/asociarme/
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

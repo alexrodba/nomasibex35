@@ -1,57 +1,50 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { useEffect, useState } from 'react'
 
+import '@fontsource/source-sans-3/latin-300.css'
+import '@fontsource/source-sans-3/latin-300-italic.css'
+import '@fontsource/source-sans-3/latin-600.css'
+import '@fontsource/source-sans-3/latin-600-italic.css'
 import '../assets/scss/main.scss'
 import Header from './Header'
 import Menu from './Menu'
-import Contact from './Contact'
 import Footer from './Footer'
+import ConsentBanner from './ConsentBanner'
+import { DEFAULT_LOCALE } from '../i18n'
 
-class Layout extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            isMenuVisible: false,
-            loading: 'is-loading'
-        }
-        this.handleToggleMenu = this.handleToggleMenu.bind(this)
-    }
+const Layout = ({ children, locale = DEFAULT_LOCALE, alternates }) => {
+  const [isMenuVisible, setMenuVisible] = useState(false)
+  const [loading, setLoading] = useState('is-loading')
 
-    componentDidMount () {
-        this.timeoutId = setTimeout(() => {
-            this.setState({loading: ''});
-        }, 100);
-    }
+  useEffect(() => {
+    // Let the first paint happen with the "is-loading" class so the banner
+    // transitions in, then remove it.
+    const id = window.requestAnimationFrame(() => setLoading(''))
+    return () => window.cancelAnimationFrame(id)
+  }, [])
 
-    componentWillUnmount () {
-        if (this.timeoutId) {
-            clearTimeout(this.timeoutId);
-        }
-    }
+  const toggleMenu = () => setMenuVisible((v) => !v)
 
-    handleToggleMenu() {
-        this.setState({
-            isMenuVisible: !this.state.isMenuVisible
-        })
-    }
-
-    render() {
-        const { children } = this.props
-
-        return (
-            <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
-                <div id="wrapper">
-                    <Header onToggleMenu={this.handleToggleMenu} />
-                    {children}
-                   {
-                   /* <Contact />
-                    <Footer />
-                    */}
-                </div>
-                <Menu onToggleMenu={this.handleToggleMenu} />
-            </div>
-        )
-    }
+  return (
+    <div
+      className={`body ${loading} ${isMenuVisible ? 'is-menu-visible' : ''}`}
+    >
+      <div id="wrapper">
+        <Header
+          locale={locale}
+          alternates={alternates}
+          onToggleMenu={toggleMenu}
+        />
+        {children}
+        <Footer locale={locale} />
+      </div>
+      <Menu
+        locale={locale}
+        onToggleMenu={toggleMenu}
+        isVisible={isMenuVisible}
+      />
+      <ConsentBanner locale={locale} />
+    </div>
+  )
 }
 
 export default Layout

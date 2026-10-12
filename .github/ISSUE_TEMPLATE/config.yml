@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Enlace roto o dato desactualizado
+    url: https://github.com/alexrodba/nomasibex35/issues/new?title=%5BCorrecci%C3%B3n%5D%20
+    about: Abre un issue en blanco indicando la página y qué hay que corregir.

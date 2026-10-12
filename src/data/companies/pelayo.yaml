@@ -1,0 +1,17 @@
+slug: pelayo
+name: "Pelayo"
+sector: servicios
+website: https://www.pelayo.com
+ownership: mutua
+owner: null
+hq: "Madrid"
+tags: [mutua, local]
+description:
+  es: "Pelayo es una mutua de seguros de coche, moto y hogar: no tiene accionistas, sus mutualistas son los dueños."
+  ca: "Pelayo és una mútua d'assegurances de cotxe, moto i llar: no té accionistes, els mutualistes en són els propietaris."
+cta:
+  url: https://www.pelayo.com/seguros-coche
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

@@ -1,0 +1,55 @@
+name: Sugerir una empresa
+description: Propón una alternativa a una empresa del IBEX 35 para añadirla al sitio.
+title: "[Empresa] "
+labels: [sugerencia]
+body:
+  - type: input
+    id: nombre
+    attributes:
+      label: Nombre de la empresa
+    validations:
+      required: true
+  - type: input
+    id: web
+    attributes:
+      label: Sitio web
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: sector
+    attributes:
+      label: Sector
+      options:
+        - Energéticas
+        - Banca
+        - Telefónicas
+        - Inmobiliarias / vivienda
+        - Servicios
+        - Consumo
+        - Turismo
+        - Otros
+    validations:
+      required: true
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo de empresa
+      options:
+        - Cooperativa
+        - Pyme / empresa local
+        - Mutua o fundación
+        - Multinacional
+        - No lo sé
+  - type: textarea
+    id: motivo
+    attributes:
+      label: ¿Por qué es una buena alternativa?
+      description: Quién la controla, de dónde es, qué la hace distinta. Enlaces bienvenidos.
+    validations:
+      required: true
+  - type: input
+    id: afiliacion
+    attributes:
+      label: ¿Tiene programa de afiliación o "trae un amigo"?
+      placeholder: Enlace al programa, si lo conoces

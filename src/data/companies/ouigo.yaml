@@ -1,0 +1,17 @@
+slug: ouigo
+name: "Ouigo"
+sector: turismo
+website: https://www.ouigo.com/es
+ownership: multinacional
+owner: "SNCF Voyageurs (Estado francés)"
+hq: "Madrid"
+tags: [multinacional]
+description:
+  es: "Ouigo es la alta velocidad de bajo coste de la pública francesa SNCF en España. Multinacional, pero tren y no avión."
+  ca: "Ouigo és l'alta velocitat de baix cost de la pública francesa SNCF a Espanya. Multinacional, però tren i no avió."
+cta:
+  url: https://www.ouigo.com/es/
+  referral: ouigo
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

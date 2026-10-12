@@ -1,20 +1,59 @@
 import React from 'react'
+import { Link } from 'gatsby'
+import { getDictionary, localizePath, REPO, SUGGEST_URL } from '../i18n'
 
-const Footer = (props) => (
+const Footer = ({ locale }) => {
+  const t = getDictionary(locale)
+  const legal = [
+    ['about', t.nav.about],
+    ['transparency', 'Transparencia'],
+    ['legal', locale === 'ca' ? 'Avís legal' : 'Aviso legal'],
+    ['cookies', 'Cookies'],
+  ]
+  return (
     <footer id="footer">
-        <div className="inner">
-            <ul className="icons">
-                <li><a href="#" className="icon alt fa-twitter"><span className="label">Twitter</span></a></li>
-                <li><a href="#" className="icon alt fa-facebook"><span className="label">Facebook</span></a></li>
-                <li><a href="#" className="icon alt fa-instagram"><span className="label">Instagram</span></a></li>
-                <li><a href="#" className="icon alt fa-github"><span className="label">GitHub</span></a></li>
-                <li><a href="#" className="icon alt fa-linkedin"><span className="label">LinkedIn</span></a></li>
-            </ul>
-            <ul className="copyright">
-                <li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-            </ul>
-        </div>
+      <div className="inner">
+        <p>{t.footer.text}</p>
+        <ul className="actions">
+          <li>
+            <a
+              href={SUGGEST_URL}
+              className="button small"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t.footer.suggest}
+            </a>
+          </li>
+          <li>
+            <a
+              href={REPO}
+              className="button small"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t.footer.code}
+            </a>
+          </li>
+        </ul>
+        <ul className="copyright">
+          <li>
+            <Link to={localizePath(locale, '/')}>No Más IBEX 35</Link>
+          </li>
+          {legal.map(([key, label]) => (
+            <li key={key}>
+              <Link to={localizePath(locale, `/${t.slugs[key]}/`)}>
+                {label}
+              </Link>
+            </li>
+          ))}
+          <li>
+            {t.footer.design}: <a href="https://html5up.net">HTML5 UP</a>
+          </li>
+        </ul>
+      </div>
     </footer>
-)
+  )
+}
 
 export default Footer

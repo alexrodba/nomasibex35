@@ -1,0 +1,17 @@
+slug: n26
+name: "N26"
+sector: banca
+website: https://n26.com/es-es
+ownership: multinacional
+owner: "N26 GmbH (Alemania)"
+hq: "Berlín"
+tags: [multinacional]
+description:
+  es: "N26 es un banco móvil alemán con licencia bancaria europea e IBAN español. Cuenta sin comisiones gestionada íntegramente desde la app."
+  ca: "N26 és un banc mòbil alemany amb llicència bancària europea i IBAN espanyol. Compte sense comissions gestionat íntegrament des de l'app."
+cta:
+  url: https://n26.com/es-es
+  referral: n26
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

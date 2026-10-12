@@ -1,0 +1,17 @@
+slug: la-corriente
+name: "La Corriente"
+sector: energia
+website: https://lacorrientecoop.es
+ownership: cooperativa
+owner: null
+hq: "Madrid"
+tags: [cooperativa, renovable, local]
+description:
+  es: "La Corriente es la cooperativa eléctrica sin ánimo de lucro de Madrid, con electricidad 100% renovable y miembro del Mercado Social. La aportación de 100 € para asociarse se devuelve si te das de baja."
+  ca: "La Corriente és la cooperativa elèctrica sense ànim de lucre de Madrid, amb electricitat 100% renovable i membre del Mercado Social. L'aportació de 100 € per associar-s'hi es retorna si et dones de baixa."
+cta:
+  url: https://lacorrientecoop.es/asociate/
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

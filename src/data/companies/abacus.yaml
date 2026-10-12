@@ -1,0 +1,17 @@
+slug: abacus
+name: "Abacus"
+sector: consumo
+website: https://www.abacus.coop
+ownership: cooperativa
+owner: null
+hq: "Barcelona"
+tags: [cooperativa, local]
+description:
+  es: "Abacus es la cooperativa de consumo catalana de libros, papelería, juguetes y cultura, fundada en 1968 y con más de un millón de socias consumidoras."
+  ca: "Abacus és la cooperativa de consum catalana de llibres, papereria, joguines i cultura, fundada el 1968 i amb més d'un milió de sòcies consumidores."
+cta:
+  url: https://www.abacus.coop/es/hazte-socio
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

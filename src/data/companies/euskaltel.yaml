@@ -1,0 +1,17 @@
+slug: euskaltel
+name: "Euskaltel"
+sector: telefonia
+website: https://www.euskaltel.com
+ownership: multinacional
+owner: "MasOrange (Orange y MásMóvil)"
+hq: "Derio (Bizkaia)"
+tags: [multinacional]
+description:
+  es: "Euskaltel es el operador histórico del País Vasco, con red de fibra propia y atención en euskera. Desde 2021 pertenece a MásMóvil, hoy MasOrange, el grupo de Orange en España: no está en el IBEX 35, pero ya no es una empresa independiente. Lo mantenemos como opción local, no como alternativa ética."
+  ca: "Euskaltel és l'operador històric del País Basc, amb xarxa de fibra pròpia i atenció en basc. Des del 2021 pertany a MásMóvil, avui MasOrange, el grup d'Orange a Espanya: no és a l'IBEX 35, però ja no és una empresa independent. El mantenim com a opció local, no com a alternativa ètica."
+cta:
+  url: https://www.euskaltel.com/particulares
+  referral: null
+image: ../../assets/images/companies/euskaltel.jpg
+imageCredit: "Photo by ThisisEngineering RAEng on Unsplash"
+lastVerified: 2026-10-12

@@ -1,0 +1,49 @@
+@use '../libs/functions';
+@use '../libs/skel';
+
+/* Consent banner */
+
+	.consent-banner {
+		background-color: functions.palette(bg-alt);
+		border-top: solid 1px functions.palette(border);
+		bottom: 0;
+		box-shadow: 0 -0.5em 2em rgba(0, 0, 0, 0.25);
+		left: 0;
+		padding: 1.25em 2em;
+		position: fixed;
+		right: 0;
+		z-index: functions.misc(z-index-base) + 1;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1.5em;
+
+		p {
+			margin: 0;
+		}
+
+		.actions {
+			margin: 0;
+			flex-shrink: 0;
+		}
+
+		@include skel.breakpoint(small) {
+			flex-direction: column;
+			align-items: stretch;
+			padding: 1.25em 1.25em;
+
+			.actions {
+				display: flex;
+				gap: 0.75em;
+
+				li {
+					flex: 1;
+					padding: 0;
+				}
+
+				.button {
+					width: 100%;
+				}
+			}
+		}
+	}

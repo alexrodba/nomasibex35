@@ -1,0 +1,17 @@
+slug: arc-cooperativa
+name: "Arç Cooperativa"
+sector: servicios
+website: https://arc.coop
+ownership: cooperativa
+owner: null
+hq: "Barcelona"
+tags: [cooperativa, banca-etica, local]
+description:
+  es: "Arç es una correduría de seguros cooperativa fundada en 1984 con el sello de seguro ético EthSI. Ofrece seguros de coche, hogar, vida, salud y bicicleta para particulares."
+  ca: "Arç és una corredoria d'assegurances cooperativa fundada el 1984 amb el segell d'assegurança ètica EthSI. Ofereix assegurances de cotxe, llar, vida, salut i bicicleta per a particulars."
+cta:
+  url: https://arc.coop/es/
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

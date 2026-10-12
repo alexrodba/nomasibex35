@@ -1,0 +1,17 @@
+slug: energetica
+name: "EnergÉtica"
+sector: energia
+website: https://www.energetica.coop
+ownership: cooperativa
+owner: null
+hq: "Valladolid"
+tags: [cooperativa, renovable, local]
+description:
+  es: "EnergÉtica es una cooperativa de consumidores sin ánimo de lucro de energía 100% renovable, nacida en Castilla y León. Comercializa electricidad de mínimo impacto ambiental y forma a sus socios en eficiencia energética y autoconsumo."
+  ca: "EnergÉtica és una cooperativa de consumidors sense ànim de lucre d'energia 100% renovable, nascuda a Castella i Lleó. Comercialitza electricitat de mínim impacte ambiental i forma els seus socis en eficiència energètica i autoconsum."
+cta:
+  url: https://www.energetica.coop/hazte-cooperativista/
+  referral: null
+image: ../../assets/images/companies/energetica.jpg
+imageCredit: "Foto: Unsplash"
+lastVerified: 2026-10-12
