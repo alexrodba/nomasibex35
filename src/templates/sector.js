@@ -100,6 +100,8 @@ export const Head = ({ data, pageContext }) => {
   const { locale, alternates } = pageContext
   const t = getDictionary(locale)
   const name = pick(data.sectorsYaml.name, locale)
+  const site = 'https://nomasibex35.com'
+  const companies = data.allCompaniesYaml.nodes
   return (
     <Seo
       title={t.seo.sectorTitle(name)}
@@ -107,6 +109,31 @@ export const Head = ({ data, pageContext }) => {
       locale={locale}
       pathname={alternates[locale]}
       alternates={alternates}
+      image={`/og/${locale}-${data.sectorsYaml.key}.jpg`}
+      preloadImage={
+        data.sectorsYaml.image && getSrc(getImage(data.sectorsYaml.image))
+      }
+      jsonLd={
+        companies.length > 0
+          ? {
+              '@context': 'https://schema.org',
+              '@type': 'ItemList',
+              name: t.seo.sectorTitle(name),
+              url: `${site}${alternates[locale]}`,
+              numberOfItems: companies.length,
+              itemListElement: companies.map((c, i) => ({
+                '@type': 'ListItem',
+                position: i + 1,
+                item: {
+                  '@type': 'Organization',
+                  name: c.name,
+                  url: c.website,
+                  description: pick(c.description, locale),
+                },
+              })),
+            }
+          : undefined
+      }
     />
   )
 }
@@ -134,7 +161,12 @@ export const query = graphql`
       }
       image {
         childImageSharp {
-          gatsbyImageData(width: 1600, layout: CONSTRAINED, formats: [AUTO])
+          gatsbyImageData(
+            width: 1440
+            layout: CONSTRAINED
+            formats: [WEBP]
+            quality: 68
+          )
         }
       }
     }

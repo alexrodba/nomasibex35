@@ -27,10 +27,11 @@ export const companyFields = graphql`
     image {
       childImageSharp {
         gatsbyImageData(
-          width: 640
-          height: 480
+          width: 480
+          height: 360
           layout: CONSTRAINED
           formats: [AUTO, WEBP]
+          quality: 70
         )
       }
     }

@@ -119,11 +119,40 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			background: functions.palette(bg);
-			min-height: 12em;
-			font-size: 4em;
-			font-weight: functions.font(weight-bold);
-			color: functions.palette(fg-light);
+			min-height: 14em;
+			position: relative;
+			overflow: hidden;
+			background-color: functions.palette(bg);
+
+			// sector tint, same hues as the home tiles
+			&:after {
+				content: '';
+				position: absolute;
+				inset: 0;
+				opacity: 0.55;
+				background-image: linear-gradient(135deg, var(--tint) 0%, transparent 85%);
+			}
+
+			&.sector-energia { --tint: #{functions.palette(accent2)}; }
+			&.sector-banca { --tint: #{functions.palette(accent1)}; }
+			&.sector-telefonia { --tint: #{functions.palette(accent3)}; }
+			&.sector-vivienda { --tint: #{functions.palette(accent4)}; }
+			&.sector-servicios { --tint: #{functions.palette(accent5)}; }
+			&.sector-consumo { --tint: #{functions.palette(accent6)}; }
+			&.sector-turismo { --tint: #{functions.palette(accent2)}; }
+			&.sector-otros { --tint: #{functions.palette(accent4)}; }
+
+			.initials {
+				position: relative;
+				z-index: 1;
+				font-size: 4.5em;
+				font-weight: functions.font(weight-bold);
+				letter-spacing: 0.05em;
+				color: functions.palette(fg-bold);
+				border-bottom: solid 3px functions.palette(fg-bold);
+				line-height: 1.1;
+				padding: 0 0.05em;
+			}
 		}
 	}
 

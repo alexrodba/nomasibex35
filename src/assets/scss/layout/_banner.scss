@@ -12,7 +12,8 @@
 
 	#banner {
 		@include skel.vendor('align-items', 'center');
-		@include skel.vendor('background-image', 'url("../images/banner.jpg")');
+		background-image: url("../images/banner.jpg");
+		background-image: image-set(url("../images/banner.webp") type("image/webp"), url("../images/banner.jpg") type("image/jpeg"));
 		@include skel.vendor('display', 'flex');
 		@include mixins.padding(4em, 0, (2em, 0, 0, 0));
 		background-attachment: fixed;
@@ -120,10 +121,12 @@
 				opacity: 1.0;
 			}
 
+			// Entrance effect without hiding the text: an opacity-0 start delays
+			// Largest Contentful Paint by the length of the fade.
 			> .inner {
 				@include skel.vendor('filter', 'blur(0.125em)');
 				@include skel.vendor('transform', 'translateX(-0.5em)');
-				opacity: 0;
+				opacity: 0.6;
 			}
 		}
 

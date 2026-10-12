@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
 import Seo from '../components/Seo'
+import bannerWebp from '../assets/images/banner.webp'
 import CompanyCard from '../components/CompanyCard'
 import { getDictionary, localizePath, pick } from '../i18n'
 
@@ -124,6 +125,7 @@ export const Head = ({ pageContext }) => {
       locale={locale}
       pathname={alternates[locale]}
       alternates={alternates}
+      preloadImage={bannerWebp}
     />
   )
 }
