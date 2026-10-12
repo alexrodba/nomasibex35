@@ -24,14 +24,16 @@ export const companyFields = graphql`
       referral
     }
     imageCredit
+    imageSource
     image {
       childImageSharp {
         gatsbyImageData(
-          width: 480
-          height: 360
+          width: 420
+          height: 315
           layout: CONSTRAINED
           formats: [AUTO, WEBP]
-          quality: 70
+          quality: 58
+          breakpoints: [210, 420, 630]
         )
       }
     }

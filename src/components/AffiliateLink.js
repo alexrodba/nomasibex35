@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { trackEvent } from '../lib/analytics'
+import { withUtm } from '../lib/utm'
 import { getDictionary } from '../i18n'
 
 /**
@@ -13,6 +14,7 @@ const AffiliateLink = ({
   company,
   sector,
   locale,
+  page = 'sector',
   className = 'button',
   children,
 }) => {
@@ -20,7 +22,9 @@ const AffiliateLink = ({
   const isAffiliate = Boolean(
     referral && referral.status === 'approved' && referral.url
   )
-  const url = isAffiliate ? referral.url : href
+  const url = isAffiliate
+    ? referral.url
+    : withUtm(href, { campaign: sector, page, placement: 'cta', locale })
   const onClick = () =>
     trackEvent(isAffiliate ? 'affiliate_click' : 'outbound_click', {
       company,
@@ -60,6 +64,7 @@ AffiliateLink.propTypes = {
   company: PropTypes.string,
   sector: PropTypes.string,
   locale: PropTypes.string.isRequired,
+  page: PropTypes.oneOf(['sector', 'directory']),
   className: PropTypes.string,
   children: PropTypes.node,
 }

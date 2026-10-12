@@ -66,6 +66,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       cta: CompanyCta!
       image: File @fileByRelativePath
       imageCredit: String
+      imageSource: String
       lastVerified: Date! @dateformat
     }
     type ReferralsYaml implements Node @dontInfer {

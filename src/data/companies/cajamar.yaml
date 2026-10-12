@@ -15,6 +15,7 @@ warning:
 cta:
   url: https://www.cajamar.es/es/particulares/productos-y-servicios/cuentas/abrir-cuenta-online/nuevo-cliente/
   referral: null
-image: null
-imageCredit: null
+image: ../../assets/images/companies/cajamar.jpg
+imageCredit: "Boubloub, CC0, Wikimedia Commons"
+imageSource: https://commons.wikimedia.org/wiki/File:Madrid_CajamarAZCA.jpg
 lastVerified: 2026-10-12

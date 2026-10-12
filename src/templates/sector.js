@@ -161,11 +161,12 @@ export const query = graphql`
       }
       image {
         childImageSharp {
+          # Sits under an 85% colour overlay: low quality is invisible and keeps LCP fast
           gatsbyImageData(
-            width: 1440
+            width: 1280
             layout: CONSTRAINED
             formats: [WEBP]
-            quality: 68
+            quality: 40
           )
         }
       }

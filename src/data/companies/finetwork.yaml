@@ -15,6 +15,7 @@ warning:
 cta:
   url: https://www.finetwork.com/tarifas-fibra-movil
   referral: finetwork
-image: null
-imageCredit: null
+image: ../../assets/images/companies/finetwork.jpg
+imageCredit: "kallerna, CC BY-SA 4.0, Wikimedia Commons"
+imageSource: https://commons.wikimedia.org/wiki/File:Explanada_de_Espa%C3%B1a_Alicante_1.jpg
 lastVerified: 2026-10-12

@@ -37,6 +37,8 @@ Decisions already taken (from the Q&A on 2026-10-11):
 
 **Post-launch (2026-10-12):** new favicon (struck-through "35", SVG + ICO + app icons); per-sector social images in es/ca (`npm run og`); schema.org JSON-LD (WebSite, Organization, ItemList of companies); sector-tinted initials for companies without photos; Lighthouse mobile now ≥ 95 on every category for all pages tested (home was 80 performance / 90 accessibility); unused grid and box styles removed.
 
+**Photos + attribution (2026-10-12):** all 64 companies now have a photo. The 55 new ones come from Wikimedia Commons with free licences only (CC0, public domain, CC BY, CC BY-SA), credited and linked on each card; `npm run photo -- <slug> "File:…"` adds more. Every outgoing link to a recommended company carries UTM parameters (`utm_source=nomasibex35`, `utm_medium=referral`, `utm_campaign=<sector>`, `utm_content=<page>-<cta|name>-<locale>`); approved affiliate links are left untouched.
+
 ---
 
 ## 0. Where the repo stands today

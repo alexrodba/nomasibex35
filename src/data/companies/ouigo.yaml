@@ -12,6 +12,7 @@ description:
 cta:
   url: https://www.ouigo.com/es/
   referral: ouigo
-image: null
-imageCredit: null
+image: ../../assets/images/companies/ouigo.jpg
+imageCredit: "Robot8A, CC BY-SA 4.0, Wikimedia Commons"
+imageSource: https://commons.wikimedia.org/wiki/File:TGV_Euroduplex_de_Ouigo_Espa%C3%B1a_en_Barcelona_Sants.jpg
 lastVerified: 2026-10-12

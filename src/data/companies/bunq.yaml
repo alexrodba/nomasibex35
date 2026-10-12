@@ -12,6 +12,7 @@ description:
 cta:
   url: https://www.bunq.com/es-es/
   referral: bunq
-image: null
-imageCredit: null
+image: ../../assets/images/companies/bunq.jpg
+imageCredit: "Ben Hemmings, CC BY-SA 4.0, Wikimedia Commons"
+imageSource: https://commons.wikimedia.org/wiki/File:Tree_planters_in_British_Columbia,_Canada.jpg
 lastVerified: 2026-10-12

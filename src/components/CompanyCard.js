@@ -3,6 +3,8 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import AffiliateLink from './AffiliateLink'
 import { TagList } from './TagBadge'
 import { getDictionary, pick } from '../i18n'
+import { trackEvent } from '../lib/analytics'
+import { withUtm } from '../lib/utm'
 
 /** "Som Energia" -> "SE", "Digi" -> "DI", "Bonpreu / Esclat" -> "BE". */
 function initials(name) {
@@ -15,7 +17,7 @@ function initials(name) {
 }
 
 /** Spotlight-style row used on sector pages and the directory. */
-const CompanyCard = ({ company, referral, locale, showSector }) => {
+const CompanyCard = ({ company, referral, locale, page = 'sector' }) => {
   const t = getDictionary(locale)
   const image = company.image && getImage(company.image)
   const isAffiliate = Boolean(
@@ -27,10 +29,7 @@ const CompanyCard = ({ company, referral, locale, showSector }) => {
         className={`image ${image ? '' : `placeholder sector-${company.sector}`}`}
       >
         {image ? (
-          <GatsbyImage
-            image={image}
-            alt={company.imageCredit || company.name}
-          />
+          <GatsbyImage image={image} alt="" />
         ) : (
           <span className="initials" aria-hidden="true">
             {initials(company.name)}
@@ -42,9 +41,21 @@ const CompanyCard = ({ company, referral, locale, showSector }) => {
           <header className="major">
             <h3>
               <a
-                href={company.website}
+                href={withUtm(company.website, {
+                  campaign: company.sector,
+                  page,
+                  placement: 'name',
+                  locale,
+                })}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() =>
+                  trackEvent('outbound_click', {
+                    company: company.slug,
+                    sector: company.sector,
+                    placement: 'name',
+                  })
+                }
               >
                 {company.name}
               </a>
@@ -75,6 +86,24 @@ const CompanyCard = ({ company, referral, locale, showSector }) => {
                 <dd>{company.hq}</dd>
               </>
             )}
+            {image && company.imageCredit && (
+              <>
+                <dt>{t.sector.photo}</dt>
+                <dd className="photo-credit">
+                  {company.imageSource ? (
+                    <a
+                      href={company.imageSource}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {company.imageCredit}
+                    </a>
+                  ) : (
+                    company.imageCredit
+                  )}
+                </dd>
+              </>
+            )}
             <dt>{t.sector.verified}</dt>
             <dd>
               <time dateTime={company.lastVerified}>
@@ -90,6 +119,7 @@ const CompanyCard = ({ company, referral, locale, showSector }) => {
                 company={company.slug}
                 sector={company.sector}
                 locale={locale}
+                page={page}
               >
                 {t.sector.signup}
               </AffiliateLink>

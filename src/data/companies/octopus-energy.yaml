@@ -12,6 +12,7 @@ description:
 cta:
   url: https://octopusenergy.es/tarifas
   referral: octopus
-image: null
-imageCredit: null
+image: ../../assets/images/companies/octopus-energy.jpg
+imageCredit: "Southend-on-Sea Borough Council, UK, CC0, Wikimedia Commons"
+imageSource: https://commons.wikimedia.org/wiki/File:Air_Source_Heat_Pump_-_Vailliant_aroTherm_Plus_on_a_terraced_house.jpg
 lastVerified: 2026-10-12

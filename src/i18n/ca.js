@@ -45,6 +45,7 @@ const ca = {
     hq: 'Seu',
     verified: 'Revisat',
     warning: 'Atenció',
+    photo: 'Foto',
   },
   tags: {
     cooperativa: 'Cooperativa',

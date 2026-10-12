@@ -94,6 +94,12 @@
 		}
 	}
 
+	.company-meta .photo-credit {
+		font-size: 0.9em;
+		opacity: 0.8;
+		word-break: break-word;
+	}
+
 	.company-warning {
 		border-left: solid 3px functions.palette(accent3);
 		padding-left: 1em;
