@@ -32,9 +32,11 @@
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js' '*.js'",
     "clean": "gatsby clean",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "check:stale": "node scripts/stale-companies.js"
   },
   "devDependencies": {
+    "js-yaml": "^5.4.3",
     "prettier": "^3.9.10",
     "sass-migrator": "^2.6.1"
   },

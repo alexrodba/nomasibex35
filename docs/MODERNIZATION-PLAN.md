@@ -33,7 +33,7 @@ Decisions already taken (from the Q&A on 2026-10-11):
 | 3 Content model + i18n | Done (2026-10-12) | YAML data + hand-rolled es/ca routing, Catalan slugs, hreflang, legacy-URL redirect pages, markdown legal pages (sobre, transparencia, aviso legal), directory with tag filter, build-time validation. Images now go through gatsby-plugin-image. |
 | 4 Content refresh | Done (2026-10-12) | IBEX list verified against the Sep 2026 CAT review (no changes since Jul 2024; next review 10 Dec 2026). 9 existing alternatives re-checked (warnings on HolaLuz, Parlem, Triodos; Euskaltel tagged `multinacional`). 55 new companies across all sectors, es + ca, no photos yet (placeholder initial). "Otros" shows an explanatory note instead of alternatives. Research reports: `research-ibex.md`, `research-alternatives.md` (session scratchpad; key facts are in the YAML). **Àlex to review the Catalan.** |
 | 5 Referrals | Registry done, applications pending | 19 programmes registered in `referrals.yaml`, all `researching`. Only 7 are real affiliate programmes (Awin: Simyo, Back Market; Tradedoubler: Ouigo; N26, Revolut/Impact, bunq/Everflow, CrowdFarming/FlexOffers). The rest are personal invite codes whose terms usually forbid public use: do not publish. Awin needs a NIF, bank account and a refundable 5 € deposit. **Reminder: GA4 id + invoicing entity.** |
-| 6 Maintenance | Not started | |
+| 6 Maintenance | Done (2026-10-12) | `link-check.yml` (monthly lychee over the built site, opens/updates an issue), `content-reminders.yml` (IBEX review issue on 12 June / 12 December; monthly stale-company issue from `scripts/stale-companies.js`), Dependabot. Set repo variables `LINK_CHECK_ISSUE` / `STALE_CHECK_ISSUE` after the first run to keep a single rolling issue. |
 
 ---
 

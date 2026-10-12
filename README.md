@@ -29,6 +29,20 @@ las cookies. En local no hace falta definirla.
 Cada push a `master` construye el sitio con GitHub Actions y lo publica en GitHub Pages
 (`.github/workflows/deploy.yml`). El dominio se fija en `static/CNAME`.
 
+## Mantenimiento
+
+- **Contenido**: cada ficha en `src/data/companies/` tiene `lastVerified`. La build de producción falla si
+  una empresa lleva más de 365 días sin revisar; `npm run check:stale` lista las que se acercan.
+- **IBEX 35**: `src/data/ibex35.yaml`. BME revisa el índice en junio y diciembre; un workflow abre un issue
+  recordatorio el día 12 de esos meses.
+- **Enlaces**: el workflow `Link check` comprueba todos los enlaces externos el día 3 de cada mes y abre un
+  issue con los rotos. Para que actualice siempre el mismo issue en vez de crear uno nuevo, define las
+  variables de repositorio `LINK_CHECK_ISSUE` y `STALE_CHECK_ISSUE` con el número del issue.
+- **Dependencias**: Dependabot, mensual, agrupado.
+- **Afiliación**: `src/data/referrals.yaml` es el registro; solo las entradas `approved` con `url` se
+  muestran como enlace de afiliado (con su etiqueta legal). Los códigos personales "invita a un amigo" no
+  se publican.
+
 ## Plan de modernización
 
 Ver [docs/MODERNIZATION-PLAN.md](docs/MODERNIZATION-PLAN.md).
