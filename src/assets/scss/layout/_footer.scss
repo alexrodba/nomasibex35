@@ -17,11 +17,17 @@
 
 			li {
 				border-left: solid 1px functions.palette(border);
-				color: functions.palette(fg-light);
+				color: rgba(244, 244, 255, 0.7);
 				display: inline-block;
 				line-height: 1;
 				margin-left: 1em;
 				padding-left: 1em;
+
+				a {
+					color: inherit;
+					display: inline-block;
+					padding: 0.6em 0;
+				}
 
 				&:first-child {
 					border-left: 0;

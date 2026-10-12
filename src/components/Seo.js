@@ -8,6 +8,9 @@ const Seo = ({
   pathname = '/',
   locale = DEFAULT_LOCALE,
   alternates,
+  image,
+  preloadImage,
+  jsonLd,
   children,
 }) => {
   const { site } = useStaticQuery(graphql`
@@ -25,6 +28,7 @@ const Seo = ({
   const fullTitle = title ? `${title} | ${meta.title}` : meta.title
   const desc = description || t.seo.description
   const url = `${meta.siteUrl}${pathname}`
+  const imageUrl = `${meta.siteUrl}${image || `/og/${locale}-home.jpg`}`
 
   return (
     <>
@@ -32,6 +36,14 @@ const Seo = ({
       <title>{fullTitle}</title>
       <meta name="description" content={desc} />
       <link rel="canonical" href={url} />
+      {preloadImage && (
+        <link
+          rel="preload"
+          as="image"
+          href={preloadImage}
+          fetchpriority="high"
+        />
+      )}
       {alternates &&
         Object.entries(alternates).map(([lang, p]) => (
           <link
@@ -54,7 +66,15 @@ const Seo = ({
       <meta property="og:description" content={desc} />
       <meta property="og:url" content={url} />
       <meta property="og:locale" content={t.ogLocale} />
-      <meta name="twitter:card" content="summary" />
+      <meta property="og:image" content={imageUrl} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content={fullTitle} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image" content={imageUrl} />
+      {jsonLd && (
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      )}
       {children}
     </>
   )

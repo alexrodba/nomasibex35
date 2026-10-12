@@ -1,8 +1,9 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import { getImage, getSrc } from 'gatsby-plugin-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import Seo from '../components/Seo'
+import bannerWebp from '../assets/images/banner.webp'
 import { getDictionary, localizePath, pick } from '../i18n'
 
 const HomePage = ({ data, pageContext }) => {
@@ -37,17 +38,22 @@ const HomePage = ({ data, pageContext }) => {
         <section id="one" className="tiles">
           {sectors.map((s) => {
             const to = localizePath(locale, `/${pick(s.slug, locale)}/`)
-            const src = s.image && getSrc(getImage(s.image))
+            const img = s.image && getImage(s.image)
             const n = counts[s.key] || 0
             return (
-              <article
-                key={s.key}
-                style={src ? { backgroundImage: `url(${src})` } : undefined}
-              >
+              <article key={s.key}>
+                {img && (
+                  <GatsbyImage
+                    image={img}
+                    alt=""
+                    className="tile-bg"
+                    objectFit="cover"
+                  />
+                )}
                 <header className="major">
-                  <h3>
+                  <h2>
                     <Link to={to}>{pick(s.name, locale)}</Link>
-                  </h3>
+                  </h2>
                   <p>
                     {pick(s.tagline, locale)}
                     {n > 0 && <span className="count"> · {n}</span>}
@@ -87,13 +93,42 @@ const HomePage = ({ data, pageContext }) => {
 
 export default HomePage
 
-export const Head = ({ pageContext }) => (
-  <Seo
-    locale={pageContext.locale}
-    pathname={pageContext.alternates[pageContext.locale]}
-    alternates={pageContext.alternates}
-  />
-)
+export const Head = ({ pageContext }) => {
+  const { locale, alternates } = pageContext
+  const t = getDictionary(locale)
+  const site = 'https://nomasibex35.com'
+  return (
+    <Seo
+      locale={locale}
+      pathname={alternates[locale]}
+      alternates={alternates}
+      image={`/og/${locale}-home.jpg`}
+      preloadImage={bannerWebp}
+      jsonLd={{
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'WebSite',
+            '@id': `${site}/#website`,
+            url: `${site}${alternates[locale]}`,
+            name: 'No Más IBEX 35',
+            description: t.seo.description,
+            inLanguage: locale,
+            publisher: { '@id': `${site}/#organization` },
+          },
+          {
+            '@type': 'Organization',
+            '@id': `${site}/#organization`,
+            name: 'No Más IBEX 35',
+            url: site,
+            logo: `${site}/favicon.svg`,
+            sameAs: ['https://github.com/alexrodba/nomasibex35'],
+          },
+        ],
+      }}
+    />
+  )
+}
 
 export const query = graphql`
   query HomeQuery {
@@ -114,7 +149,12 @@ export const query = graphql`
         }
         image {
           childImageSharp {
-            gatsbyImageData(width: 1000, layout: CONSTRAINED, formats: [AUTO])
+            gatsbyImageData(
+              width: 800
+              layout: CONSTRAINED
+              formats: [AUTO, WEBP]
+              quality: 70
+            )
           }
         }
       }

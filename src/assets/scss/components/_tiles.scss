@@ -48,11 +48,21 @@
       display: none;
     }
 
+    // Lazy-loaded photo behind the tint layers (:after z1, :before z2)
+    .tile-bg {
+      position: absolute !important;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
     header {
       position: relative;
       z-index: 3;
     }
 
+    h2,
     h3 {
       font-size: 1.75em;
 
@@ -174,7 +184,8 @@
       max-height: none;
       min-height: 0;
 
-      h3 {
+      h2,
+    h3 {
         font-size: 1.5em;
       }
     }

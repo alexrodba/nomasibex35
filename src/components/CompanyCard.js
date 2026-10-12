@@ -4,6 +4,16 @@ import AffiliateLink from './AffiliateLink'
 import { TagList } from './TagBadge'
 import { getDictionary, pick } from '../i18n'
 
+/** "Som Energia" -> "SE", "Digi" -> "DI", "Bonpreu / Esclat" -> "BE". */
+function initials(name) {
+  const words = name
+    .replace(/[^\p{L}\p{N}\s]/gu, ' ')
+    .split(/\s+/)
+    .filter((w) => w && !/^(de|del|la|el|y|i|d)$/i.test(w))
+  if (words.length >= 2) return (words[0][0] + words[1][0]).toUpperCase()
+  return (words[0] || name).slice(0, 2).toUpperCase()
+}
+
 /** Spotlight-style row used on sector pages and the directory. */
 const CompanyCard = ({ company, referral, locale, showSector }) => {
   const t = getDictionary(locale)
@@ -13,14 +23,18 @@ const CompanyCard = ({ company, referral, locale, showSector }) => {
   )
   return (
     <section id={company.slug} className="company">
-      <div className={`image ${image ? '' : 'placeholder'}`}>
+      <div
+        className={`image ${image ? '' : `placeholder sector-${company.sector}`}`}
+      >
         {image ? (
           <GatsbyImage
             image={image}
             alt={company.imageCredit || company.name}
           />
         ) : (
-          <span aria-hidden="true">{company.name.charAt(0)}</span>
+          <span className="initials" aria-hidden="true">
+            {initials(company.name)}
+          </span>
         )}
       </div>
       <div className="content">

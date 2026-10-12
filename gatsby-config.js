@@ -42,6 +42,8 @@ module.exports = {
         theme_color: '#242943',
         display: 'minimal-ui',
         icon: 'src/assets/images/website-icon.png',
+        // favicon.ico + favicon.svg are linked in gatsby-ssr.js; keep the manifest's PNGs for app icons
+        include_favicon: false,
       },
     },
     {

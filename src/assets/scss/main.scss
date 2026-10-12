@@ -4,7 +4,6 @@
 @use 'libs/mixins';
 @use 'libs/skel';
 
-@use "css-grid";
 
 /*
 	Forty by HTML5 UP
@@ -35,7 +34,6 @@
 // Component.
 
 	@include meta.load-css('components/section');
-	@include meta.load-css('components/box');
 	@include meta.load-css('components/icon');
 	@include meta.load-css('components/image');
 	@include meta.load-css('components/list');
