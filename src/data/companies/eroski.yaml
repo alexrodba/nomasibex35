@@ -12,6 +12,7 @@ description:
 cta:
   url: https://www.eroski.es/eroski-club/
   referral: null
-image: null
-imageCredit: null
+image: ../../assets/images/companies/eroski.jpg
+imageCredit: "Zarateman, CC0, Wikimedia Commons"
+imageSource: https://commons.wikimedia.org/wiki/File:Salvatierra_-_Eroski_2.jpg
 lastVerified: 2026-10-12

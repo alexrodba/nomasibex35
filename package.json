@@ -34,7 +34,8 @@
     "clean": "gatsby clean",
     "serve": "gatsby serve",
     "check:stale": "node scripts/stale-companies.js",
-    "og": "node scripts/og-images.js"
+    "og": "node scripts/og-images.js",
+    "photo": "node scripts/add-company-photo.js"
   },
   "devDependencies": {
     "js-yaml": "^5.4.3",

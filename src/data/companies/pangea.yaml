@@ -12,6 +12,7 @@ description:
 cta:
   url: https://pangea.org
   referral: null
-image: null
-imageCredit: null
+image: ../../assets/images/companies/pangea.jpg
+imageCredit: "PiDatacenters, CC BY-SA 4.0, Wikimedia Commons"
+imageSource: https://commons.wikimedia.org/wiki/File:Racks_Amravati_Data_Center.jpg
 lastVerified: 2026-10-12

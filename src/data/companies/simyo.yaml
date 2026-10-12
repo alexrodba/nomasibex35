@@ -12,6 +12,7 @@ description:
 cta:
   url: https://www.simyo.es/
   referral: simyo
-image: null
-imageCredit: null
+image: ../../assets/images/companies/simyo.jpg
+imageCredit: "Intel Free Press, CC BY-SA 2.0, Wikimedia Commons"
+imageSource: https://commons.wikimedia.org/wiki/File:Indoor_location_services_on_mobile_phone_(10928087126).jpg
 lastVerified: 2026-10-12

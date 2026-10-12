@@ -12,6 +12,7 @@ description:
 cta:
   url: https://www.consum.es/bienvenido-registro/
   referral: null
-image: null
-imageCredit: null
+image: ../../assets/images/companies/consum.jpg
+imageCredit: "polycart, CC BY 2.0, Wikimedia Commons"
+imageSource: https://commons.wikimedia.org/wiki/File:Fachada_de_un_supermercado_Consum_en_Valencia.jpg
 lastVerified: 2026-10-12

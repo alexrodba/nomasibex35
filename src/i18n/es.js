@@ -45,6 +45,7 @@ const es = {
     hq: 'Sede',
     verified: 'Revisado',
     warning: 'Atención',
+    photo: 'Foto',
   },
   tags: {
     cooperativa: 'Cooperativa',

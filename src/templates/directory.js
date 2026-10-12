@@ -95,6 +95,7 @@ const DirectoryPage = ({ data, pageContext }) => {
                     company={c}
                     referral={c.cta.referral ? referrals[c.cta.referral] : null}
                     locale={locale}
+                    page="directory"
                   />
                 ))}
               </section>

@@ -12,6 +12,7 @@ description:
 cta:
   url: https://www.revolut.com/es-ES/
   referral: revolut
-image: null
-imageCredit: null
+image: ../../assets/images/companies/revolut.jpg
+imageCredit: "RuinDig/Yuki Uchida, CC BY 4.0, Wikimedia Commons"
+imageSource: https://commons.wikimedia.org/wiki/File:Cashless-Payment-Devices_CreditCard-and-Code-payment.jpg
 lastVerified: 2026-10-12

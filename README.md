@@ -39,6 +39,8 @@ Cada push a `master` construye el sitio con GitHub Actions y lo publica en GitHu
   issue con los rotos. Para que actualice siempre el mismo issue en vez de crear uno nuevo, define las
   variables de repositorio `LINK_CHECK_ISSUE` y `STALE_CHECK_ISSUE` con el número del issue.
 - **Dependencias**: Dependabot, mensual, agrupado.
+- **Fotos de empresas**: `npm run photo -- <slug> "File:Nombre.jpg"` descarga una foto de Wikimedia Commons (solo licencias libres: CC0, dominio público, CC BY, CC BY-SA), la redimensiona y escribe el crédito y el enlace en la ficha. El crédito se muestra en la tarjeta.
+- **Atribución (UTM)**: todos los enlaces a empresas recomendadas llevan `utm_source=nomasibex35`, `utm_medium=referral`, `utm_campaign=<sector>` y `utm_content=<página>-<cta|name>-<idioma>` (ver `src/lib/utm.js`). Los enlaces de afiliado aprobados no se tocan.
 - **Imágenes para redes sociales**: `npm run og` regenera `static/og/` (una por sector y la portada, en castellano y catalán) a partir de `sectors.yaml`. Hay que relanzarlo si cambian nombres, lemas o fotos de sector.
 - **Afiliación**: `src/data/referrals.yaml` es el registro; solo las entradas `approved` con `url` se
   muestran como enlace de afiliado (con su etiqueta legal). Los códigos personales "invita a un amigo" no
