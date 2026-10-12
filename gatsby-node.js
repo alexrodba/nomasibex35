@@ -40,6 +40,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       tagline: LocalizedString!
       heading: LocalizedString!
       banner: LocalizedString!
+      note: LocalizedString
       image: File @fileByRelativePath
     }
     type Ibex35Yaml implements Node @dontInfer {

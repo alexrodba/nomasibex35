@@ -1,0 +1,17 @@
+slug: zencer
+name: "Zencer"
+sector: energia
+website: https://www.zencer.es
+ownership: cooperativa
+owner: null
+hq: "Fuengirola (Málaga)"
+tags: [cooperativa, renovable, local]
+description:
+  es: "Zencer es una cooperativa andaluza de electricidad renovable fundada en Fuengirola en 2011. Se contrata haciéndose socio con una aportación de unos 100 €."
+  ca: "Zencer és una cooperativa andalusa d'electricitat renovable fundada a Fuengirola el 2011. Es contracta fent-se soci amb una aportació d'uns 100 €."
+cta:
+  url: https://www.zencer.es/hazte-socio/
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

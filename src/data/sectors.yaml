@@ -95,3 +95,6 @@
     es: Empresas del IBEX 35 que no encajan en las otras categorías
     ca: Empreses de l'IBEX 35 que no encaixen en les altres categories
   image: ../assets/images/sectors/otros.jpg
+  note:
+    es: "Para estas empresas no hay una alternativa de consumo sensata: nadie elige su proveedor de acero, y los hemoderivados y fármacos de Grifols y Rovi los prescribe el médico. Frente a Solaria, la alternativa ciudadana es el autoconsumo y las cooperativas de energía que listamos en Energéticas. Si conoces una alternativa real, propónla."
+    ca: "Per a aquestes empreses no hi ha una alternativa de consum sensata: ningú tria el seu proveïdor d'acer, i els hemoderivats i fàrmacs de Grifols i Rovi els prescriu el metge. Davant de Solaria, l'alternativa ciutadana és l'autoconsum i les cooperatives d'energia que llistem a Energètiques. Si coneixes una alternativa real, proposa-la."

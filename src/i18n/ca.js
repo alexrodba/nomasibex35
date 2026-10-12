@@ -55,6 +55,7 @@ const ca = {
     local: 'Empresa local',
     multinacional: 'Multinacional',
     afiliado: "Enllaç d'afiliat",
+    publica: 'Empresa pública',
   },
   ownership: {
     cooperativa: 'Cooperativa',
@@ -63,6 +64,8 @@ const ca = {
     fundacion: 'Fundació',
     multinacional: 'Multinacional',
     publica: 'Empresa pública',
+    privada: 'Empresa privada',
+    asociacion: 'Associació',
   },
   directory: {
     title: 'Totes les empreses',

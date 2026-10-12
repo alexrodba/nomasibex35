@@ -1,0 +1,17 @@
+slug: revolut
+name: "Revolut"
+sector: banca
+website: https://www.revolut.com/es-ES/
+ownership: multinacional
+owner: "Revolut Ltd (Reino Unido)"
+hq: "Londres"
+tags: [multinacional]
+description:
+  es: "Revolut es un banco móvil británico que opera en España con licencia bancaria europea e IBAN español. Cuenta, tarjetas, cambio de divisas e inversión desde la app."
+  ca: "Revolut és un banc mòbil britànic que opera a Espanya amb llicència bancària europea i IBAN espanyol. Compte, targetes, canvi de divises i inversió des de l'app."
+cta:
+  url: https://www.revolut.com/es-ES/
+  referral: revolut
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

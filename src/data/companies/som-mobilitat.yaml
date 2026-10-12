@@ -1,0 +1,17 @@
+slug: som-mobilitat
+name: "Som Mobilitat"
+sector: servicios
+website: https://sommobilitat.coop
+ownership: cooperativa
+owner: null
+hq: "Mataró (Barcelona)"
+tags: [cooperativa, renovable, local]
+description:
+  es: "Som Mobilitat es una cooperativa de consumo sin ánimo de lucro de coches eléctricos compartidos en Cataluña, con miles de socias y vehículos en decenas de municipios. Hacerse socio cuesta 10 €."
+  ca: "Som Mobilitat és una cooperativa de consum sense ànim de lucre de cotxes elèctrics compartits a Catalunya, amb milers de sòcies i vehicles a desenes de municipis. Fer-se soci costa 10 €."
+cta:
+  url: https://sommobilitat.coop/formulari-fes-te-soci/
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

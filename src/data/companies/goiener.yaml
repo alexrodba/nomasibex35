@@ -1,0 +1,17 @@
+slug: goiener
+name: "Goiener"
+sector: energia
+website: https://www.goiener.com
+ownership: cooperativa
+owner: null
+hq: "Ordizia (Gipuzkoa)"
+tags: [cooperativa, renovable, local]
+description:
+  es: "Goiener es una cooperativa de consumo de energía renovable nacida en Euskadi y Navarra, con unas 16.700 personas socias, que suministra en todo el Estado. Para contratar hay que hacerse socia con una aportación de 100 € reembolsable."
+  ca: "Goiener és una cooperativa de consum d'energia renovable nascuda a Euskadi i Navarra, amb unes 16.700 persones sòcies, que subministra a tot l'Estat. Per contractar cal fer-se sòcia amb una aportació de 100 € reemborsable."
+cta:
+  url: https://www.goiener.com/
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

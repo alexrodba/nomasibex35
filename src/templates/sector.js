@@ -67,9 +67,13 @@ const SectorPage = ({ data, pageContext }) => {
           <section id="two" className="wip">
             <div className="inner">
               <header className="major">
-                <h3>{t.sector.wipTitle}</h3>
+                <h3>
+                  {sector.note ? pick(sector.name, locale) : t.sector.wipTitle}
+                </h3>
               </header>
-              <p>{t.sector.wipText}</p>
+              <p>
+                {sector.note ? pick(sector.note, locale) : t.sector.wipText}
+              </p>
               <ul className="actions">
                 <li>
                   <a
@@ -121,6 +125,10 @@ export const query = graphql`
         ca
       }
       banner {
+        es
+        ca
+      }
+      note {
         es
         ca
       }

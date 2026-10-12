@@ -1,0 +1,17 @@
+slug: housfy
+name: "Housfy"
+sector: vivienda
+website: https://housfy.com
+ownership: pyme
+owner: null
+hq: "Barcelona"
+tags: [local]
+description:
+  es: "Housfy es una proptech de Barcelona para vender, alquilar o hipotecar una vivienda online con comisiones fijas. Es una startup privada con inversores de capital riesgo, frente a los portales Idealista (Cinven) y Fotocasa (Scout24), hoy en manos extranjeras."
+  ca: "Housfy és una proptech de Barcelona per vendre, llogar o hipotecar un habitatge en línia amb comissions fixes. És una startup privada amb inversors de capital risc, davant dels portals Idealista (Cinven) i Fotocasa (Scout24), avui en mans estrangeres."
+cta:
+  url: https://housfy.com/vender-pisos
+  referral: housfy
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

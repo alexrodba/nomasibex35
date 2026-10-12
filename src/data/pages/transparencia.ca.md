@@ -16,9 +16,13 @@ Al lloc, aquests enllaços es marquen sempre amb el text **"enllaç d'afiliat"**
 
 **Programes actius a dia d'avui: cap.** Estem sol·licitant l'alta als programes de les empreses llistades. Aquesta taula s'actualitzarà quan se n'aprovi algun.
 
-| Empresa | Programa | Estat |
-|---------|----------|-------|
-| HolaLuz | Pla amic | En estudi |
+| Tipus | Empreses | Estat |
+|-------|----------|-------|
+| Programes d'afiliació oberts (xarxes Awin, Tradedoubler, Impact, Everflow, TUNE) | Simyo, Back Market, Ouigo, N26, Revolut, bunq, CrowdFarming | Pendent de sol·licitar |
+| Programes "convida un amic" (codis personals) | HolaLuz, Digi, Parlem, Octopus, Contigo, Bassols, Abanca, Finetwork, Lowi, Housfy, Laboral Kutxa | No es faran servir llevat que l'empresa n'autoritzi un ús públic |
+| Sense programa | Totes les cooperatives, mútues i fundacions llistades | — |
+
+Els programes "convida un amic" són personals: les seves condicions solen prohibir publicar-los en un web. No els farem servir com si fossin afiliació institucional. El registre complet és a [referrals.yaml](https://github.com/alexrodba/nomasibex35/blob/master/src/data/referrals.yaml).
 
 Tenir o no programa d'afiliació **no influeix** en quines empreses hi apareixen ni en l'ordre: les cooperatives, que rarament en tenen, hi van exactament igual que les altres.
 

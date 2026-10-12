@@ -1,0 +1,17 @@
+slug: cooltra
+name: "Cooltra"
+sector: servicios
+website: https://cooltra.com
+ownership: pyme
+owner: null
+hq: "Barcelona"
+tags: [local]
+description:
+  es: "Cooltra es la empresa barcelonesa de alquiler y uso compartido de motos y bicis eléctricas, presente en varias ciudades europeas desde 2006."
+  ca: "Cooltra és l'empresa barcelonina de lloguer i ús compartit de motos i bicis elèctriques, present en diverses ciutats europees des del 2006."
+cta:
+  url: https://cooltra.com/es/
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

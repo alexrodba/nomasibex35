@@ -1,0 +1,17 @@
+slug: rusticae
+name: "Rusticae"
+sector: turismo
+website: https://rusticae.es
+ownership: privada
+owner: "Grupo Barceló (80%)"
+hq: "Madrid"
+tags: [local]
+description:
+  es: "Rusticae es un club de unos 200 hoteles con encanto, la mayoría en España, fundado en 1996. Desde hace unos años pertenece en un 80% al Grupo Barceló, familiar y no cotizado."
+  ca: "Rusticae és un club d'uns 200 hotels amb encant, la majoria a Espanya, fundat el 1996. Des de fa uns anys pertany en un 80% al Grup Barceló, familiar i no cotitzat."
+cta:
+  url: https://rusticae.es
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

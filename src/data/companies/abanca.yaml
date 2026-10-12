@@ -1,0 +1,17 @@
+slug: abanca
+name: "Abanca"
+sector: banca
+website: https://www.abanca.com
+ownership: privada
+owner: "Juan Carlos Escotet (Banesco), ~85%"
+hq: "A Coruña"
+tags: [local]
+description:
+  es: "Abanca es el banco gallego nacido de las antiguas cajas de ahorros de Galicia. No cotiza en bolsa; su propietario mayoritario es el banquero venezolano Juan Carlos Escotet."
+  ca: "Abanca és el banc gallec nascut de les antigues caixes d'estalvis de Galícia. No cotitza en borsa; el seu propietari majoritari és el banquer veneçolà Juan Carlos Escotet."
+cta:
+  url: https://www.abanca.com/es/
+  referral: abanca
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

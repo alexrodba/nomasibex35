@@ -1,0 +1,17 @@
+slug: laboral-kutxa
+name: "Laboral Kutxa"
+sector: banca
+website: https://www.laboralkutxa.com
+ownership: cooperativa
+owner: "Grupo Mondragón (cooperativa)"
+hq: "Arrasate-Mondragón (Gipuzkoa)"
+tags: [cooperativa, local]
+description:
+  es: "Laboral Kutxa es la cooperativa de crédito del Grupo Mondragón, con sede en Euskadi y presencia en Navarra y Cataluña. Es un banco completo: cuentas, hipotecas, app y oficinas."
+  ca: "Laboral Kutxa és la cooperativa de crèdit del Grup Mondragón, amb seu a Euskadi i presència a Navarra i Catalunya. És un banc complet: comptes, hipoteques, app i oficines."
+cta:
+  url: https://www.laboralkutxa.com/es/hazte-cliente/
+  referral: laboral-kutxa
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

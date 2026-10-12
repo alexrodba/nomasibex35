@@ -34,3 +34,126 @@
   url: null
   reward: "50 € por amigo (condiciones de 2020)"
   notes: "planamigo.euskaltel.com no responde (2026-10-12); posiblemente discontinuado"
+# --- Added 2026-10-12 from the alternatives research. "invite" programmes are personal
+# "invita a un amigo" codes: most terms forbid publishing them on a public site, so they
+# stay `researching` until the company confirms an institutional/affiliate option.
+- key: octopus
+  company: Octopus Energy
+  type: invite
+  status: researching
+  program: Invita a un amigo
+  url: null
+  reward: "~50 € para ambas partes (enlace personal en el área de cliente)"
+  notes: "Sin programa de afiliados público; /invita-a-un-amigo devolvía error 500 el 2026-10-12"
+- key: contigo
+  company: Contigo Energía
+  type: invite
+  status: researching
+  program: Comparto Contigo
+  url: null
+  reward: "40 € para quien invita y 20 € para el invitado"
+  notes: "https://contigoenergia.com/invita-a-un-amigo/ (código desde el área de cliente)"
+- key: bassols
+  company: Bassols Energia
+  type: invite
+  status: researching
+  program: Plan amigo
+  url: null
+  reward: "50 € para cada parte, vía app"
+  notes: "https://bassolsenergia.com/es/app-bassols/"
+- key: laboral-kutxa
+  company: Laboral Kutxa
+  type: invite
+  status: researching
+  program: Efecto WinWin
+  url: null
+  reward: "Campañas por temporadas (la de 2025 cerró en julio)"
+  notes: "Sin programa permanente"
+- key: abanca
+  company: Abanca
+  type: invite
+  status: researching
+  program: Trae un Amig@
+  url: null
+  reward: "50 € por alta confirmada, máximo 10"
+  notes: "Código personal desde la app"
+- key: n26
+  company: N26
+  type: affiliate
+  status: researching
+  program: N26 Affiliate (HasOffers/TUNE)
+  url: null
+  reward: "Pago por cuenta abierta (CPO), cookie 30 días"
+  notes: "Alta pública: https://n26.com/es-es/affiliate — solicitar"
+- key: revolut
+  company: Revolut
+  type: network
+  status: researching
+  program: Revolut Affiliate (Impact)
+  url: null
+  reward: "Comisión tras verificación y primera recarga"
+  notes: "https://www.revolut.com/become-a-revolut-affiliate/ — Impact cobra cuota de inactividad tras 6 meses sin pagos"
+- key: bunq
+  company: bunq
+  type: affiliate
+  status: researching
+  program: bunq Affiliate (Everflow)
+  url: null
+  reward: null
+  notes: "Alta directa: https://bunq.everflowclient.io/affiliate/signup"
+- key: finetwork
+  company: Finetwork
+  type: invite
+  status: researching
+  program: Plan Amigo
+  url: null
+  reward: "15 € para cada parte"
+  notes: "https://www.finetwork.com/plan-amigo (código en la app)"
+- key: lowi
+  company: Lowi
+  type: invite
+  status: researching
+  program: WeLowi
+  url: null
+  reward: "Hasta 60 € para cada parte tras 3 meses"
+  notes: "https://www.lowi.es/programa-welowi/"
+- key: simyo
+  company: Simyo
+  type: network
+  status: researching
+  program: Simyo afiliación (Awin)
+  url: null
+  reward: "Hasta 26 € por alta activa"
+  notes: "Alta pública: https://www.simyo.es/afiliacion/ — requiere cuenta en Awin"
+- key: housfy
+  company: Housfy
+  type: invite
+  status: researching
+  program: Plan Invita a un amigo
+  url: null
+  reward: "Cheque de 200 € al firmar un alquiler (vigencia sin confirmar)"
+  notes: "https://housfy.com/blog/bases-legales-de-la-promocion-plan-invita-a-un-amigo/"
+- key: crowdfarming
+  company: CrowdFarming
+  type: network
+  status: researching
+  program: CrowdFarming ES (FlexOffers)
+  url: null
+  reward: "9,6% por venta (estado dudoso)"
+  notes: "https://www.flexoffers.com/affiliate-programs/crowdfarming-se-affiliate-program/"
+- key: back-market
+  company: Back Market
+  type: network
+  status: researching
+  program: Back Market (Awin)
+  url: null
+  reward: "~5% por venta"
+  notes: "https://ui.awin.com/merchant-profile/30861 — requiere cuenta en Awin"
+- key: ouigo
+  company: Ouigo
+  type: network
+  status: researching
+  program: Ouigo (Tradedoubler)
+  url: null
+  reward: "3% por venta"
+  notes: "https://directory.tradedoubler.com/es/programs/234734-Ouigo"

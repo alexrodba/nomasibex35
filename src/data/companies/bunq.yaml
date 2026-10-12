@@ -1,0 +1,17 @@
+slug: bunq
+name: "bunq"
+sector: banca
+website: https://www.bunq.com/es-es
+ownership: multinacional
+owner: "bunq B.V. (Países Bajos)"
+hq: "Ámsterdam"
+tags: [multinacional]
+description:
+  es: "bunq es un banco móvil neerlandés con IBAN español disponible, controlado en un 90% por su fundador. Planta árboles con el gasto de la tarjeta y permite elegir en qué invierte el banco tu dinero."
+  ca: "bunq és un banc mòbil neerlandès amb IBAN espanyol disponible, controlat en un 90% pel seu fundador. Planta arbres amb la despesa de la targeta i permet triar en què inverteix el banc els teus diners."
+cta:
+  url: https://www.bunq.com/es-es/
+  referral: bunq
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

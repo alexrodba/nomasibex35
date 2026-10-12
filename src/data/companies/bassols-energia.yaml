@@ -1,0 +1,17 @@
+slug: bassols-energia
+name: "Bassols Energia"
+sector: energia
+website: https://bassolsenergia.com
+ownership: pyme
+owner: null
+hq: "Olot (Girona)"
+tags: [renovable, local]
+description:
+  es: "Bassols Energia es una comercializadora de energía 100% verde de Olot, propiedad de un grupo familiar con origen hidroeléctrico en 1905. Ofrece tarifas de hogar y autoconsumo."
+  ca: "Bassols Energia és una comercialitzadora d'energia 100% verda d'Olot, propietat d'un grup familiar amb origen hidroelèctric el 1905. Ofereix tarifes de llar i autoconsum."
+cta:
+  url: https://bassolsenergia.com/es/tarifas-de-luz/
+  referral: bassols
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

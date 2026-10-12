@@ -55,6 +55,7 @@ const es = {
     local: 'Empresa local',
     multinacional: 'Multinacional',
     afiliado: 'Enlace de afiliado',
+    publica: 'Empresa pública',
   },
   ownership: {
     cooperativa: 'Cooperativa',
@@ -63,6 +64,8 @@ const es = {
     fundacion: 'Fundación',
     multinacional: 'Multinacional',
     publica: 'Empresa pública',
+    privada: 'Empresa privada',
+    asociacion: 'Asociación',
   },
   directory: {
     title: 'Todas las empresas',

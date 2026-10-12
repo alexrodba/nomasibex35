@@ -1,0 +1,17 @@
+slug: simyo
+name: "Simyo"
+sector: telefonia
+website: https://www.simyo.es
+ownership: multinacional
+owner: "MasOrange (Orange y MásMóvil)"
+hq: "Madrid"
+tags: [multinacional]
+description:
+  es: "Simyo es un operador móvil virtual de bajo coste. Es marca de MasOrange, el grupo de Orange y MásMóvil en España: no está en el IBEX 35, pero es una multinacional."
+  ca: "Simyo és un operador mòbil virtual de baix cost. És marca de MasOrange, el grup d'Orange i MásMóvil a Espanya: no és a l'IBEX 35, però és una multinacional."
+cta:
+  url: https://www.simyo.es/
+  referral: simyo
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

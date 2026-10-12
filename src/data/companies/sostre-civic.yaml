@@ -1,0 +1,17 @@
+slug: sostre-civic
+name: "Sostre Cívic"
+sector: vivienda
+website: https://sostrecivic.coop
+ownership: cooperativa
+owner: null
+hq: "Barcelona"
+tags: [cooperativa, local]
+description:
+  es: "Sostre Cívic es la cooperativa de vivienda en cesión de uso de referencia en Cataluña, con más de 20 proyectos y premio europeo de economía social en 2025. Hacerse socio cuesta 100 €; acceder a una vivienda implica lista de espera y una aportación inicial."
+  ca: "Sostre Cívic és la cooperativa d'habitatge en cessió d'ús de referència a Catalunya, amb més de 20 projectes i premi europeu d'economia social el 2025. Fer-se soci costa 100 €; accedir a un habitatge implica llista d'espera i una aportació inicial."
+cta:
+  url: https://forms.sostrecivic.coop/alta.php
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

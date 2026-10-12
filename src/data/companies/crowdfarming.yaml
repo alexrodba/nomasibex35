@@ -1,0 +1,17 @@
+slug: crowdfarming
+name: "CrowdFarming"
+sector: consumo
+website: https://www.crowdfarming.com/es
+ownership: pyme
+owner: null
+hq: "Madrid"
+tags: [local]
+description:
+  es: "CrowdFarming es la plataforma española de venta directa de agricultores a consumidores: adoptas un árbol o recibes cajas de fruta ecológica. En 2025 absorbió La Colmena Que Dice Sí."
+  ca: "CrowdFarming és la plataforma espanyola de venda directa d'agricultors a consumidors: adoptes un arbre o reps caixes de fruita ecològica. El 2025 va absorbir La Colmena Que Dice Sí."
+cta:
+  url: https://www.crowdfarming.com/es
+  referral: crowdfarming
+image: null
+imageCredit: null
+lastVerified: 2026-10-12

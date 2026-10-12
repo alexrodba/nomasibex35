@@ -1,0 +1,17 @@
+slug: rutas-pangea
+name: "Rutas Pangea"
+sector: turismo
+website: https://www.rutaspangea.com
+ownership: pyme
+owner: null
+hq: "Madrid"
+tags: [local]
+description:
+  es: "Rutas Pangea es una agencia de cicloturismo de Madrid: Vías Verdes, EuroVelo y Camino de Santiago, autoguiados o en grupo."
+  ca: "Rutas Pangea és una agència de cicloturisme de Madrid: Vies Verdes, EuroVelo i Camí de Sant Jaume, autoguiats o en grup."
+cta:
+  url: https://www.rutaspangea.com
+  referral: null
+image: null
+imageCredit: null
+lastVerified: 2026-10-12
