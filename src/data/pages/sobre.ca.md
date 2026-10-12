@@ -32,4 +32,4 @@ Cada fitxa indica qui n'és el propietari i quan la vam revisar per última vega
 
 ## Diners
 
-Alguns enllaços són d'afiliació. Els ingressos cobreixen el domini i poca cosa més; la resta es dona. Els detalls són a la pàgina de [transparència](/ca/transparencia/).
+Alguns enllaços poden ser d'afiliació: si ho són, ho indiquem al costat de l'enllaç. Contractar a través d'ells no et costa res més.

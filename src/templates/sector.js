@@ -4,6 +4,7 @@ import { getImage, getSrc } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import Seo from '../components/Seo'
 import CompanyCard from '../components/CompanyCard'
+import Disclaimer from '../components/Disclaimer'
 import { getDictionary, pick, SUGGEST_URL } from '../i18n'
 
 const SectorPage = ({ data, pageContext }) => {
@@ -89,6 +90,7 @@ const SectorPage = ({ data, pageContext }) => {
             </div>
           </section>
         )}
+        {companies.length > 0 && <Disclaimer locale={locale} />}
       </div>
     </Layout>
   )

@@ -46,6 +46,8 @@ const es = {
     verified: 'Revisado',
     warning: 'Atención',
     photo: 'Foto',
+    disclaimer:
+      'La información de cada empresa sale de fuentes públicas y se revisó en la fecha indicada en su ficha. Puede haber cambiado: compruébala en la web de la empresa antes de contratar. Esto no es asesoramiento financiero ni legal.',
   },
   tags: {
     cooperativa: 'Cooperativa',

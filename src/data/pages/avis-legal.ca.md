@@ -1,4 +1,6 @@
 ---
+# Hidden for now (2026-10-12): not built or linked. Remove this line to publish again.
+hidden: true
 slug: avis-legal
 lang: ca
 alternate: aviso-legal

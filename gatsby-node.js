@@ -126,6 +126,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             slug
             lang
             alternate
+            hidden
           }
         }
       }
@@ -187,8 +188,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // Markdown pages: one file per language, linked through frontmatter.alternate (slug in the other language)
   for (const page of pages.nodes) {
-    const { slug, lang, alternate } = page.frontmatter
-    if (!slug || !lang) continue
+    const { slug, lang, alternate, hidden } = page.frontmatter
+    if (!slug || !lang || hidden) continue
     const other = lang === 'es' ? 'ca' : 'es'
     createPage({
       path: localizePath(lang, `/${slug}/`),
