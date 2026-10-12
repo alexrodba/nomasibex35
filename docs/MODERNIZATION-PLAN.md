@@ -28,10 +28,10 @@ Decisions already taken (from the Q&A on 2026-10-11):
 
 | Phase | State | Notes |
 |-------|-------|-------|
-| 1 Deploy pipeline | Code done (2026-10-12) | Pending on Àlex: enable Pages (source "GitHub Actions") in repo settings, set custom domain, point DNS at GitHub (see Phase 1 step 4). |
+| 1 Deploy pipeline | Code done (2026-10-12) | Pending on Àlex: enable Pages (source "GitHub Actions") in repo settings, set custom domain, point DNS at GitHub (see Phase 1 step 4). **Found:** the live site is on Netlify (apex 301s to www.nomasibex35.com, which serves the 2020 build). Cut-over = add the domain in GitHub Pages, change DNS at the registrar (GoDaddy/cdmon), then delete the Netlify site. The Typeform is still live but unlinked. |
 | 2 Tech cleanup | Done (2026-10-12) | GA4 loaded by hand after consent instead of the gtag plugin (so nothing reaches Google before "Aceptar"). Image pipeline installed but wiring to `gatsby-plugin-image` deferred to Phase 3, where pages become data-driven. Lighthouse/a11y pass on tiles also moved to Phase 3. `/cookies/` page added early because the banner links to it. |
-| 3 Content model + i18n | Not started | |
-| 4 Content refresh | Not started | |
+| 3 Content model + i18n | Done (2026-10-12) | YAML data + hand-rolled es/ca routing, Catalan slugs, hreflang, legacy-URL redirect pages, markdown legal pages (sobre, transparencia, aviso legal), directory with tag filter, build-time validation. Images now go through gatsby-plugin-image. |
+| 4 Content refresh | In progress | IBEX list verified against Sep 2026 CAT review (no changes since Jul 2024; next review 10 Dec 2026). Existing 9 alternatives re-checked; HolaLuz, Parlem and Triodos carry a warning note; Euskaltel kept as `multinacional` (MasOrange). New sectors pending research. |
 | 5 Referrals | Not started | Reminder: GA4 id + invoicing entity. |
 | 6 Maintenance | Not started | |
 

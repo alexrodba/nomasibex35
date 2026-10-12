@@ -1,0 +1,20 @@
+slug: parlem
+name: "Parlem Telecom"
+sector: telefonia
+website: https://parlem.com
+ownership: pyme
+owner: null
+hq: "Barcelona"
+tags: [local]
+description:
+  es: "Parlem es una operadora de móvil y fibra con sede en Barcelona, fundada en 2014, que cotiza en BME Growth y ofrece atención en catalán y castellano. La OCU la ha valorado como la operadora mejor puntuada en 2024 y 2025."
+  ca: "Parlem és una operadora de mòbil i fibra amb seu a Barcelona, fundada el 2014, que cotitza a BME Growth i ofereix atenció en català i castellà. L'OCU l'ha valorat com l'operadora més ben puntuada el 2024 i el 2025."
+warning:
+  es: "En marzo de 2026 se canceló su fusión con Avatel y dimitió su consejero delegado; la acción ha caído con fuerza. El servicio sigue operativo."
+  ca: "El març del 2026 es va cancel·lar la fusió amb Avatel i va dimitir el conseller delegat; l'acció ha caigut amb força. El servei continua operatiu."
+cta:
+  url: https://parlem.com/es/
+  referral: parlem
+image: ../../assets/images/companies/parlem.jpg
+imageCredit: "Photo by Hal Gatewood on Unsplash"
+lastVerified: 2026-10-12

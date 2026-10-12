@@ -1,0 +1,17 @@
+slug: caixa-enginyers
+name: "Caixa d'Enginyers"
+sector: banca
+website: https://www.caixaenginyers.com
+ownership: cooperativa
+owner: null
+hq: "Barcelona"
+tags: [cooperativa, local]
+description:
+  es: "Caja de Ingenieros es una cooperativa de crédito con más de 200.000 socios. Ofrece banca personal, comercial, institucional y de empresa en toda España, con vocación de servicio a profesionales de cualquier sector, no solo ingenieros."
+  ca: "Caixa d'Enginyers és una cooperativa de crèdit amb més de 200.000 socis. Ofereix banca personal, comercial, institucional i d'empresa a tot Espanya, amb vocació de servei a professionals de qualsevol sector, no només enginyers."
+cta:
+  url: https://www.caixaenginyers.com/es/soci-cooperatiu
+  referral: null
+image: ../../assets/images/companies/caixa-enginyers.jpg
+imageCredit: "Photo by ThisisEngineering RAEng on Unsplash"
+lastVerified: 2026-10-12

@@ -9,8 +9,9 @@ import Header from './Header'
 import Menu from './Menu'
 import Footer from './Footer'
 import ConsentBanner from './ConsentBanner'
+import { DEFAULT_LOCALE } from '../i18n'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, locale = DEFAULT_LOCALE, alternates }) => {
   const [isMenuVisible, setMenuVisible] = useState(false)
   const [loading, setLoading] = useState('is-loading')
 
@@ -28,12 +29,20 @@ const Layout = ({ children }) => {
       className={`body ${loading} ${isMenuVisible ? 'is-menu-visible' : ''}`}
     >
       <div id="wrapper">
-        <Header onToggleMenu={toggleMenu} />
+        <Header
+          locale={locale}
+          alternates={alternates}
+          onToggleMenu={toggleMenu}
+        />
         {children}
-        <Footer />
+        <Footer locale={locale} />
       </div>
-      <Menu onToggleMenu={toggleMenu} isVisible={isMenuVisible} />
-      <ConsentBanner />
+      <Menu
+        locale={locale}
+        onToggleMenu={toggleMenu}
+        isVisible={isMenuVisible}
+      />
+      <ConsentBanner locale={locale} />
     </div>
   )
 }

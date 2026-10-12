@@ -7,10 +7,12 @@ import {
   loadAnalytics,
   storeConsent,
 } from '../lib/analytics'
+import { getDictionary, localizePath } from '../i18n'
 
 const GA4_ID = process.env.GATSBY_GA4_ID || ''
 
-const ConsentBanner = () => {
+const ConsentBanner = ({ locale }) => {
+  const t = getDictionary(locale)
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
@@ -30,11 +32,14 @@ const ConsentBanner = () => {
       className="consent-banner"
       role="dialog"
       aria-live="polite"
-      aria-label="Aviso de cookies"
+      aria-label={t.consent.label}
     >
       <p>
-        Usamos Google Analytics para saber qué secciones se visitan más. Solo se
-        activa si aceptas. <Link to="/cookies/">Más información</Link>.
+        {t.consent.text}{' '}
+        <Link to={localizePath(locale, `/${t.slugs.cookies}/`)}>
+          {t.consent.more}
+        </Link>
+        .
       </p>
       <ul className="actions">
         <li>
@@ -43,7 +48,7 @@ const ConsentBanner = () => {
             className="button"
             onClick={() => decide(DENIED)}
           >
-            Rechazar
+            {t.consent.reject}
           </button>
         </li>
         <li>
@@ -52,7 +57,7 @@ const ConsentBanner = () => {
             className="button special"
             onClick={() => decide(GRANTED)}
           >
-            Aceptar
+            {t.consent.accept}
           </button>
         </li>
       </ul>

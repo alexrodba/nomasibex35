@@ -1,47 +1,67 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
+import { graphql, Link, useStaticQuery } from 'gatsby'
+import { getDictionary, localizePath, pick } from '../i18n'
 
-const links = [
-  ['/', 'Inicio'],
-  ['/energy/', 'Energéticas'],
-  ['/banking/', 'Banca'],
-  ['/telcos/', 'Telefónicas'],
-  ['/realestate/', 'Inmobiliarias'],
-  ['/services/', 'Servicios'],
-  ['/consumer/', 'Consumo'],
-  ['/tourism/', 'Turismo'],
-  ['/others/', 'Otros'],
-]
+const Menu = ({ locale, onToggleMenu, isVisible }) => {
+  const t = getDictionary(locale)
+  const data = useStaticQuery(graphql`
+    query MenuSectors {
+      allSectorsYaml(sort: { order: ASC }) {
+        nodes {
+          key
+          slug {
+            es
+            ca
+          }
+          name {
+            es
+            ca
+          }
+        }
+      }
+    }
+  `)
+  const items = [
+    [localizePath(locale, '/'), t.nav.home],
+    ...data.allSectorsYaml.nodes.map((s) => [
+      localizePath(locale, `/${pick(s.slug, locale)}/`),
+      pick(s.name, locale),
+    ]),
+    [localizePath(locale, `/${t.slugs.directory}/`), t.nav.directory],
+    [localizePath(locale, `/${t.slugs.about}/`), t.nav.about],
+  ]
 
-const Menu = ({ onToggleMenu, isVisible }) => (
-  <nav id="menu" aria-hidden={!isVisible}>
-    <div className="inner">
-      <ul className="links">
-        {links.map(([to, label]) => (
-          <li key={to}>
-            <Link onClick={onToggleMenu} to={to}>
-              {label}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-    <a
-      className="close"
-      href="#menu"
-      role="button"
-      onClick={(e) => {
-        e.preventDefault()
-        onToggleMenu()
-      }}
-    >
-      Cerrar
-    </a>
-  </nav>
-)
+  return (
+    <nav id="menu" aria-hidden={!isVisible}>
+      <div className="inner">
+        <ul className="links">
+          {items.map(([to, label]) => (
+            <li key={to}>
+              <Link onClick={onToggleMenu} to={to}>
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <a
+        className="close"
+        href="#menu"
+        role="button"
+        onClick={(e) => {
+          e.preventDefault()
+          onToggleMenu()
+        }}
+      >
+        {t.nav.close}
+      </a>
+    </nav>
+  )
+}
 
 Menu.propTypes = {
+  locale: PropTypes.string.isRequired,
   onToggleMenu: PropTypes.func.isRequired,
   isVisible: PropTypes.bool,
 }

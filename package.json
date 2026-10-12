@@ -12,6 +12,7 @@
     "gatsby-plugin-sharp": "^5.16.0",
     "gatsby-plugin-sitemap": "^6.16.0",
     "gatsby-source-filesystem": "^5.16.0",
+    "gatsby-transformer-remark": "^6.16.0",
     "gatsby-transformer-sharp": "^5.16.0",
     "gatsby-transformer-yaml": "^5.16.0",
     "prop-types": "^15.8.1",

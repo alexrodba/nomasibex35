@@ -1,0 +1,47 @@
+# The 35 IBEX constituents, mapped to the site's sectors.
+# The index is reviewed twice a year (June and December); update after each one.
+# lastReviewed: 2026-10-12. Verified: no membership changes since 22 Jul 2024 (Puig in, Meliá out);
+# CAT review of 10 Sep 2026 kept the 35. Next ordinary review: 10 Dec 2026 (Técnicas Reunidas favourite to enter, Acciona Energía to exit).
+
+- { name: Acciona Energía, sector: energia }
+- { name: Enagás, sector: energia }
+- { name: Endesa, sector: energia }
+- { name: Iberdrola, sector: energia }
+- { name: Naturgy, sector: energia, note: { es: antes Gas Natural Fenosa, ca: abans Gas Natural Fenosa } }
+- { name: Redeia, sector: energia, note: { es: antes Red Eléctrica de España, ca: abans Red Eléctrica de España } }
+- { name: Repsol, sector: energia }
+- { name: Solaria, sector: energia }
+
+- { name: Banco Sabadell, sector: banca }
+- { name: Banco Santander, sector: banca }
+- { name: Bankinter, sector: banca }
+- { name: BBVA, sector: banca }
+- { name: CaixaBank, sector: banca, note: { es: absorbió Bankia en 2021, ca: va absorbir Bankia el 2021 } }
+- { name: Unicaja, sector: banca }
+
+- { name: Cellnex Telecom, sector: telefonia, note: { es: torres de telecomunicaciones, ca: torres de telecomunicacions } }
+- { name: Telefónica, sector: telefonia, note: { es: 'Movistar, O2', ca: 'Movistar, O2' } }
+
+- { name: Acciona, sector: vivienda }
+- { name: ACS, sector: vivienda }
+- { name: Ferrovial, sector: vivienda, note: { es: 'autopistas, aeropuertos', ca: 'autopistes, aeroports' } }
+- { name: Inmobiliaria Colonial, sector: vivienda }
+- { name: Merlin Properties, sector: vivienda }
+- { name: Sacyr, sector: vivienda }
+
+- { name: Indra, sector: servicios }
+- { name: Logista, sector: servicios, note: { es: distribución y logística, ca: distribució i logística } }
+- { name: Mapfre, sector: servicios }
+
+- { name: Fluidra, sector: consumo, note: { es: piscinas, ca: piscines } }
+- { name: Inditex, sector: consumo, note: { es: 'Zara, Massimo Dutti, Bershka, Pull&Bear, Stradivarius, Oysho', ca: 'Zara, Massimo Dutti, Bershka, Pull&Bear, Stradivarius, Oysho' } }
+- { name: Puig, sector: consumo, note: { es: 'perfumes y moda: Carolina Herrera, Paco Rabanne, Charlotte Tilbury', ca: 'perfums i moda: Carolina Herrera, Paco Rabanne, Charlotte Tilbury' } }
+
+- { name: Aena, sector: turismo }
+- { name: Amadeus IT Group, sector: turismo }
+- { name: IAG, sector: turismo, note: { es: 'Iberia, Vueling, Level', ca: 'Iberia, Vueling, Level' } }
+
+- { name: Acerinox, sector: otros, note: { es: acero inoxidable, ca: acer inoxidable } }
+- { name: ArcelorMittal, sector: otros, note: { es: siderurgia, ca: siderúrgia } }
+- { name: Grifols, sector: otros, note: { es: hemoderivados, ca: hemoderivats } }
+- { name: Laboratorios Rovi, sector: otros, note: { es: farmacéutica, ca: farmacèutica } }
