@@ -46,6 +46,8 @@ const ca = {
     verified: 'Revisat',
     warning: 'Atenció',
     photo: 'Foto',
+    disclaimer:
+      "La informació de cada empresa surt de fonts públiques i es va revisar en la data indicada a la seva fitxa. Pot haver canviat: comprova-la al web de l'empresa abans de contractar. Això no és assessorament financer ni legal.",
   },
   tags: {
     cooperativa: 'Cooperativa',

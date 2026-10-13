@@ -39,6 +39,8 @@ Decisions already taken (from the Q&A on 2026-10-11):
 
 **Photos + attribution (2026-10-12):** all 64 companies now have a photo. The 55 new ones come from Wikimedia Commons with free licences only (CC0, public domain, CC BY, CC BY-SA), credited and linked on each card; `npm run photo -- <slug> "File:…"` adds more. Every outgoing link to a recommended company carries UTM parameters (`utm_source=nomasibex35`, `utm_medium=referral`, `utm_campaign=<sector>`, `utm_content=<page>-<cta|name>-<locale>`); approved affiliate links are left untouched.
 
+**Decisions (2026-10-12, later):** affiliate payouts go to the owner personally; no anonymisation (repo stays under the personal account); legal notice and transparency pages are hidden for now (files kept with `hidden: true`, restore by deleting that line). LSSI art. 10 requires identifying the site owner once affiliate income starts: revisit then. Every company list carries a general accuracy / not-financial-advice disclaimer. The three housing co-ops use photos from their own websites (credited and linked; remove if a co-op objects). Catalan review tracked in Linear PRI-406.
+
 ---
 
 ## 0. Where the repo stands today

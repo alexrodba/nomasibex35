@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import Seo from '../components/Seo'
 import bannerWebp from '../assets/images/banner.webp'
 import CompanyCard from '../components/CompanyCard'
+import Disclaimer from '../components/Disclaimer'
 import { getDictionary, localizePath, pick } from '../i18n'
 
 const DirectoryPage = ({ data, pageContext }) => {
@@ -109,6 +110,7 @@ const DirectoryPage = ({ data, pageContext }) => {
             </div>
           </section>
         )}
+        <Disclaimer locale={locale} />
       </div>
     </Layout>
   )

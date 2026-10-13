@@ -32,4 +32,4 @@ Es un proyecto anónimo y de código abierto. Todo el contenido y el código est
 
 ## Dinero
 
-Algunos enlaces son de afiliación. Los ingresos cubren el dominio y poco más; el resto se dona. Los detalles están en la página de [transparencia](/transparencia/).
+Algunos enlaces pueden ser de afiliación: si lo son, lo indicamos junto al enlace. Contratar a través de ellos no te cuesta nada más.

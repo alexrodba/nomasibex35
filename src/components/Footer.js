@@ -6,8 +6,6 @@ const Footer = ({ locale }) => {
   const t = getDictionary(locale)
   const legal = [
     ['about', t.nav.about],
-    ['transparency', 'Transparencia'],
-    ['legal', locale === 'ca' ? 'Avís legal' : 'Aviso legal'],
     ['cookies', 'Cookies'],
   ]
   return (
