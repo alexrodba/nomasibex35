@@ -39,24 +39,19 @@ export function loadAnalytics(measurementId) {
     analytics_storage: 'granted',
   })
   gtag('js', new Date())
-  gtag('config', measurementId, { anonymize_ip: true, send_page_view: false })
+  // Page views: GA4 sends the first one on config and, through the data
+  // stream's enhanced measurement (on by default), one per in-site navigation
+  // (browser history changes). The site sends no page views of its own, so
+  // nothing is counted twice.
+  gtag('config', measurementId, { anonymize_ip: true })
   const script = document.createElement('script')
   script.async = true
   script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`
   document.head.appendChild(script)
-  trackPageView()
 }
 
 export function isLoaded() {
   return loaded
-}
-
-export function trackPageView() {
-  if (!loaded) return
-  gtag('event', 'page_view', {
-    page_path: window.location.pathname + window.location.search,
-    page_title: document.title,
-  })
 }
 
 export function trackEvent(name, params) {
