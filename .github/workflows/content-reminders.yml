@@ -25,7 +25,8 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
         run: |
-          title="Revisar la composición del IBEX 35 ($(date -u +%B\ %Y))"
+          meses=(enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre)
+          title="Revisar la composición del IBEX 35 (${meses[$(date -u +%-m) - 1]} de $(date -u +%Y))"
           if gh issue list --state open --search "\"$title\" in:title" --json number --jq 'length' | grep -qv '^0$'; then
             echo "Issue already open"; exit 0
           fi

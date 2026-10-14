@@ -28,8 +28,11 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           # Only absolute http(s) links; sites that block bots (403/429) are not failures.
+          # --root-dir turns internal links (/energia/) into file:// URLs, which
+          # the http(s) scheme filter then skips; Gatsby already guarantees them.
           args: >-
             --no-progress
+            --root-dir ${{ github.workspace }}/public
             --scheme https --scheme http
             --accept 200..=206,403,429
             --max-concurrency 4
