@@ -57,7 +57,7 @@ jobs:
           cat stale.md
       - name: Open or update the issue
         if: steps.stale.outputs.count != '0'
-        uses: peter-evans/create-issue-from-file@v5
+        uses: peter-evans/create-issue-from-file@v6
         with:
           title: 'Empresas pendientes de revisar (lastVerified a punto de caducar)'
           content-filepath: stale.md
