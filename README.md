@@ -27,7 +27,8 @@ las cookies. En local no hace falta definirla.
 ## Despliegue
 
 Cada push a `master` construye el sitio con GitHub Actions y lo publica en GitHub Pages
-(`.github/workflows/deploy.yml`). El dominio se fija en `static/CNAME`.
+(`.github/workflows/deploy.yml`). Las pull requests solo se construyen para comprobar que compilan
+(`.github/workflows/ci.yml`) y nunca publican nada. El dominio se fija en `static/CNAME`.
 
 ## Mantenimiento
 

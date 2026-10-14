@@ -1,9 +1,10 @@
-name: Build and deploy
+name: Deploy
 
+# Publishes the site to GitHub Pages on every push to master (and on demand).
+# Pull requests are built by ci.yml instead.
 on:
   push:
     branches: [master]
-  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -42,7 +43,6 @@ jobs:
           path: public
 
   deploy:
-    if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     environment:
