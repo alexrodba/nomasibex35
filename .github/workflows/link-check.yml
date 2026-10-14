@@ -30,6 +30,8 @@ jobs:
           # Only absolute http(s) links; sites that block bots (403/418/429) are not failures.
           # --root-dir turns internal links (/energia/) into file:// URLs, which
           # the http(s) scheme filter then skips; Gatsby already guarantees them.
+          # Back Market is excluded because it blocks CI runners at the HTTP/2 layer.
+          # No comments inside args: they are passed to a shell and would cut it short.
           args: >-
             --no-progress
             --root-dir ${{ github.workspace }}/public
@@ -42,7 +44,7 @@ jobs:
             --exclude '^https?://(www\.)?googletagmanager\.com'
             --exclude '^https?://github\.com/alexrodba/nomasibex35/issues/new'
             --exclude '^https?://ui\.awin\.com'
-            --exclude '^https?://(www\.)?backmarket\.es' # blocks CI runners at the HTTP/2 layer
+            --exclude '^https?://(www\.)?backmarket\.es'
             'public/**/*.html'
           fail: false
           output: lychee-report.md
