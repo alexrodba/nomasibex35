@@ -39,7 +39,7 @@ Cada push a `master` construye el sitio con GitHub Actions y lo publica en GitHu
   issue con los rotos. Para que actualice siempre el mismo issue en vez de crear uno nuevo, define las
   variables de repositorio `LINK_CHECK_ISSUE` y `STALE_CHECK_ISSUE` con el número del issue.
 - **Dependencias**: Dependabot, mensual, agrupado.
-- **Fotos de empresas**: `npm run photo -- <slug> "File:Nombre.jpg"` descarga una foto de Wikimedia Commons (solo licencias libres: CC0, dominio público, CC BY, CC BY-SA), la redimensiona y escribe el crédito y el enlace en la ficha. El crédito se muestra en la tarjeta.
+- **Fotos de empresas**: `npm run photo -- <slug> "File:Nombre.jpg"` (Wikimedia Commons) o `npm run photo -- <slug> openverse:<id>` (Openverse) descarga una foto, la redimensiona y guarda el crédito en la ficha. Solo se aceptan licencias que no exigen atribución visible: CC0 y dominio público (además de las fotos con licencia Unsplash ya existentes).
 - **Atribución (UTM)**: todos los enlaces a empresas recomendadas llevan `utm_source=nomasibex35`, `utm_medium=referral`, `utm_campaign=<sector>` y `utm_content=<página>-<cta|name>-<idioma>` (ver `src/lib/utm.js`). Los enlaces de afiliado aprobados no se tocan.
 - **Imágenes para redes sociales**: `npm run og` regenera `static/og/` (una por sector y la portada, en castellano y catalán) a partir de `sectors.yaml`. Hay que relanzarlo si cambian nombres, lemas o fotos de sector.
 - **Afiliación**: `src/data/referrals.yaml` es el registro; solo las entradas `approved` con `url` se
@@ -52,6 +52,7 @@ Ver [docs/MODERNIZATION-PLAN.md](docs/MODERNIZATION-PLAN.md).
 
 ## Créditos
 
-Plantilla original: [Forty](https://html5up.net/forty) de HTML5 UP (CCA 3.0), vía
-[gatsby-starter-forty](https://github.com/codebushi/gatsby-starter-forty). Fotos: Unsplash
-(crédito en cada imagen).
+Diseño basado en la plantilla [Forty](https://html5up.net/forty) de HTML5 UP (CC BY 3.0), vía
+[gatsby-starter-forty](https://github.com/codebushi/gatsby-starter-forty). La atribución también va en los
+metadatos del sitio (`<meta name="credits">`, datos estructurados `isBasedOn`, cabecera del CSS y `/humans.txt`).
+Fotos: Wikimedia Commons, Openverse y Unsplash, con licencias CC0, dominio público o Unsplash.

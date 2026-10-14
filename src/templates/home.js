@@ -113,6 +113,17 @@ export const Head = ({ pageContext }) => {
             url: `${site}${alternates[locale]}`,
             name: 'No Más IBEX 35',
             description: t.seo.description,
+            isBasedOn: {
+              '@type': 'CreativeWork',
+              name: 'Forty',
+              url: 'https://html5up.net/forty',
+              creator: {
+                '@type': 'Organization',
+                name: 'HTML5 UP',
+                url: 'https://html5up.net',
+              },
+              license: 'https://creativecommons.org/licenses/by/3.0/',
+            },
             inLanguage: locale,
             publisher: { '@id': `${site}/#organization` },
           },
