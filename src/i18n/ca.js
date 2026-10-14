@@ -26,7 +26,7 @@ const ca = {
     start: 'Comença',
     allHeading: 'Totes les empreses',
     allText:
-      "No Más IBEX 35 és un lloc web sense ànim de lucre que proporciona informació pública a qui vulgui trobar altres opcions a les empreses de l'IBEX 35. Alguns dels enllaços a les empreses alternatives són d'afiliació i reporten uns ingressos a No Más IBEX 35. Farem servir aquests ingressos per cobrir les despeses bàsiques d'aquest lloc web i la resta la donarem a beneficència.",
+      'Mitjançant el següent enllaç podràs veure totes les empreses en una sola pàgina. Aquest llistat es va actualitzant constantment.',
     allButton: 'Veure totes les empreses',
   },
   sector: {
@@ -40,7 +40,7 @@ const ca = {
     visit: 'Anar al web',
     affiliate: "enllaç d'afiliat",
     affiliateTitle:
-      "Si contractes a través d'aquest enllaç, No Más IBEX 35 rep una comissió. No et costa res més.",
+      "Si contractes a través d'aquest enllaç, No Más IBEX 35 rep una comissió però a tu no et costa ni res més.",
     ownedBy: 'Propietat de',
     hq: 'Seu',
     verified: 'Revisat',
@@ -80,7 +80,7 @@ const ca = {
     none: 'Cap empresa amb aquesta etiqueta.',
   },
   footer: {
-    text: "No Más IBEX 35 és un projecte sense ànim de lucre, anònim i de codi obert. Alguns enllaços són d'afiliació: els ingressos cobreixen les despeses del lloc i la resta es dona a beneficència.",
+    text: "No Más IBEX 35 és un projecte sense ànim de lucre, anònim i de codi obert. Alguns dels enllaços a les empreses alternatives són d'afiliació i algun dia, potser, si Déu vol, perquè de moment no, però esperem que la situació millori, uns ingressos a No Más IBEX 35. Farem servir aquests ingressos per cobrir les despeses bàsiques d'aquest lloc web i reinvertir-ho en publicitat per fer-ho arribar a més gent.",
     suggest: 'Suggerir una empresa',
     code: 'Codi a GitHub',
     design: 'Disseny',
