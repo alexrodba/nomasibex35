@@ -40,7 +40,7 @@ const es = {
     visit: 'Ir a la web',
     affiliate: 'enlace de afiliado',
     affiliateTitle:
-      'Si contratas a través de este enlace, No Más IBEX 35 recibe una comisión, pero a ti no te cuesta nada más.',
+      'Si contratas a través de este enlace, No Más IBEX 35 recibe una comisión, pero a ti no te cuesta ni un céntimo más.',
     ownedBy: 'Propiedad de',
     hq: 'Sede',
     verified: 'Revisado',
@@ -80,7 +80,7 @@ const es = {
     none: 'Ninguna empresa con esa etiqueta.',
   },
   footer: {
-    text: 'No Más IBEX 35 es un proyecto sin ánimo de lucro, anónimo y de código abierto. Algunos de los enlaces a las empresas alternativas son de afiliación y algún día, quizá, si Dios quiere (porque de momento no), generarán unos ingresos para No Más IBEX 35. Usaremos esos ingresos para cubrir los gastos básicos de este sitio web y reinvertirlos en publicidad para llegar a más gente.',
+    text: 'No Más IBEX 35 es un proyecto sin ánimo de lucro y de código abierto. Algunos de los enlaces a las empresas alternativas son de afiliación y algún día, quizá, si Dios quiere (porque de momento no), generarán unos ingresos para No Más IBEX 35. Usaremos esos ingresos para cubrir los gastos básicos de este sitio web y reinvertirlos en publicidad para llegar a más gente.',
     suggest: 'Sugerir una empresa',
     code: 'Código en GitHub',
     design: 'Diseño',
